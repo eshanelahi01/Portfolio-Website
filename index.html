@@ -4,8 +4,33 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords" content="Eshan Elahi, portfolio, Software Engineer, Machine Learning, AI Chatbots " />
-  <meta name="description" content="Portfolio of Eshan Elahi - Software Engineer | Chatbots & Machine Learning Specialist" />
+
+  <!-- ✅ SEO: Title + Description -->
+  <title>Eshan Elahi | AI Engineer & Machine Learning Developer (Chatbots, Agents, FastAPI)</title>
+  <meta name="description" content="Eshan Elahi is a Software Engineer and AI Engineer specializing in Machine Learning, AI Chatbots, AI Agents, RAG systems, MERN stack, FastAPI/Node.js REST APIs, and scalable backend solutions. Explore projects, skills, experience, and contact details." />
+
+  <!-- ✅ SEO: Keywords (not a major ranking factor, but fine to include) -->
+  <meta name="keywords" content="Eshan Elahi, Eshan Elahi portfolio, AI Engineer, Machine Learning Developer, Software Engineer, Chatbot Developer, AI Chatbots, AI Agents, RAG Developer, Retrieval Augmented Generation, FastAPI Developer, Node.js Developer, Express.js Developer, Python Developer, React Developer, MERN Stack Developer, Backend Developer, REST API Developer, MLOps, Model Deployment, Real-time Inference, OpenCV Developer, Fraud Detection AI, Voice Booking Agent, SafarBot, Full Stack Developer, Software Engineer Pakistan, AI Engineer Pakistan, Machine Learning Engineer Pakistan, Rawalpindi, PMAS Arid Agriculture University, UAAR Rawalpindi, ABDANIX Solutions" />
+  <meta name="author" content="Eshan Elahi" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eshanelahi.netlify.app/" />
+
+  <!-- ✅ Social Preview -->
+  <meta property="og:title" content="Eshan Elahi | AI Engineer & Machine Learning Developer" />
+  <meta property="og:description" content="AI Engineer building ML pipelines, AI chatbots, agents, and scalable APIs with FastAPI/Node.js. Explore projects and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eshanelahi.netlify.app/" />
+  <!-- ⚠️ Create this image: /assets/images/preview.jpg (1200x630 recommended) -->
+  <meta property="og:image" content="https://eshanelahi.netlify.app/assets/images/preview.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Eshan Elahi | AI Engineer & Machine Learning Developer" />
+  <meta name="twitter:description" content="AI Engineer building ML pipelines, AI chatbots, agents, and scalable APIs with FastAPI/Node.js." />
+  <meta name="twitter:image" content="https://eshanelahi.netlify.app/assets/images/preview.jpg" />
+
+  <meta name="theme-color" content="#2563eb" />
+
+  <!-- ✅ Favicon -->
   <link rel="shortcut icon" id="favicon" href="./assets/images/favicon.jpg" type="image/x-jpg">
 
   <!-- Font & Icons -->
@@ -15,16 +40,38 @@
   <!-- AOS (scroll animations) -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <title>Portfolio | Eshan Elahi</title>
+  <!-- ✅ Structured Data (Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Eshan Elahi",
+    "url": "https://eshanelahi.netlify.app/",
+    "image": "https://eshanelahi.netlify.app/assets/images/myphoto.png",
+    "jobTitle": "Software Engineer / AI Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "ABDANIX Solutions"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "PMAS Arid Agriculture University, Rawalpindi"
+    },
+    "sameAs": [
+      "https://github.com/eshanelahi01",
+      "https://www.linkedin.com/in/eshan-elahi-3a7946357"
+    ]
+  }
+  </script>
 
   <style>
   :root{
-    --bg: #f4f7fb; /* Light grey background */
-    --card: #eaf0fa; /* Card: lighter blue-grey */
-    --muted: #5a6b7a; /* Muted: professional blue-grey */
-    --accent: #2563eb; /* Accent: professional blue */
-    --accent-2: #60a5fa; /* Accent-2: lighter blue */
-    --glass: rgba(96,165,250,0.08); /* blue glass */
+    --bg: #f4f7fb;
+    --card: #eaf0fa;
+    --muted: #5a6b7a;
+    --accent: #2563eb;
+    --accent-2: #60a5fa;
+    --glass: rgba(96,165,250,0.08);
     --glass-2: rgba(96,165,250,0.04);
     --radius: 14px;
     --maxw: 1150px;
@@ -42,14 +89,8 @@
     line-height:1.5;
   }
 
-  /* Container */
-  .site {
-    max-width: var(--maxw);
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+  .site { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
 
-  /* NAVBAR */
   header {
     position: sticky;
     top: 0;
@@ -110,17 +151,13 @@
     box-shadow: 0 8px 20px rgba(96,165,250,0.10);
   }
 
-  /* HERO */
   .hero{
     padding: 80px 0 36px;
     display:flex;
     align-items:center;
     gap:40px;
   }
-  .hero-left{
-    flex:1;
-    min-width:260px;
-  }
+  .hero-left{ flex:1; min-width:260px; }
   .hero-right{
     width:420px;
     max-width:42%;
@@ -172,7 +209,6 @@
   }
   .socials a:hover { transform: translateY(-6px); color: #fff; background: linear-gradient(135deg,var(--accent),var(--accent-2)); box-shadow: 0 12px 28px rgba(96,165,250,0.12); }
 
-  /* Hero Image card */
   .hero-card{
     width:360px;
     max-width:100%;
@@ -187,10 +223,8 @@
     transition: transform 350ms ease;
   }
   .hero-card img{ width:100%; height:auto; border-radius:12px; display:block; }
-
   .hero-card:hover { transform: translateY(-8px) rotate(-0.6deg); }
 
-  /* SECTION HEADING */
   .heading {
     display:flex;
     align-items:center;
@@ -201,7 +235,6 @@
   }
   .heading i{ color:var(--accent-2); font-size:1.05rem; }
 
-  /* ABOUT */
   .about {
     padding: 28px 0 40px;
     border-radius: 12px;
@@ -225,9 +258,7 @@
     box-shadow: 0 12px 30px rgba(96,165,250,0.18), 0 6px 18px rgba(96,165,250,0.12);
     transition: transform 420ms cubic-bezier(.2,.9,.2,1.0);
   }
-  .profile-card img.float {
-    animation: float 6s ease-in-out infinite;
-  }
+  .profile-card img.float { animation: float 6s ease-in-out infinite; }
   @keyframes float {
     0% { transform: translateY(0) }
     50% { transform: translateY(-8px) }
@@ -243,12 +274,7 @@
   .about-info .item { display:inline-flex; gap:8px; align-items:center; background:var(--glass-2); padding:8px 12px; border-radius:10px; border:1px solid rgba(96,165,250,0.08); color:var(--muted); }
   .about-info i { color:var(--accent-2); }
 
-  /* SKILLS */
-  .skills-container {
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-  }
+  .skills-container { display:flex; flex-wrap:wrap; gap:20px; }
   .skill-card {
     background: linear-gradient(180deg, rgba(96,165,250,0.02), rgba(244,247,251,0.02));
     padding:18px;
@@ -262,17 +288,8 @@
   .skill-card i { font-size:22px; color:var(--accent-2); margin-right:10px; }
   .skill-card h4 { margin:8px 0 8px; color:var(--accent); font-size:1rem; }
   .skill-card p { color:var(--muted); margin:0; font-size:0.95rem; }
-
   .skill-card:hover { transform: translateY(-8px); box-shadow: 0 22px 48px rgba(96,165,250,0.18); }
 
-  /* Education */
-  .education .box {
-    background: linear-gradient(180deg, rgba(96,165,250,0.01), rgba(244,247,251,0.02));
-    padding:18px; border-radius:12px; border:1px solid var(--glass);
-    color:var(--muted);
-  }
-
-  /* Projects / Experience cards */
   .card-grid {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -289,13 +306,12 @@
 
   .timeline { display:flex; flex-direction:column; gap:12px; }
 
-  /* CONTACT */
   .contact {
-  background: linear-gradient(180deg, #eaf0fa 0%, #f4f7fb 100%);
-  border-radius: 12px;
-  padding: 32px 0 44px;
-  margin-top: 32px;
-}
+    background: linear-gradient(180deg, #eaf0fa 0%, #f4f7fb 100%);
+    border-radius: 12px;
+    padding: 32px 0 44px;
+    margin-top: 32px;
+  }
   .contact-grid {
     display:grid;
     grid-template-columns: 1fr 360px;
@@ -317,7 +333,8 @@
   .contact-card i { font-size:20px; color:var(--accent-2); }
 
   .contact-form {
-    padding:18px; border-radius:12px; border:1px solid var(--glass); background:linear-gradient(180deg, rgba(96,165,250,0.01), rgba(244,247,251,0.02));
+    padding:18px; border-radius:12px; border:1px solid var(--glass);
+    background:linear-gradient(180deg, rgba(96,165,250,0.01), rgba(244,247,251,0.02));
     box-shadow: 0 8px 32px rgba(96,165,250,0.07);
   }
   .contact-form label { display:block; font-size:0.85rem; color:var(--muted); margin-bottom:6px; }
@@ -334,9 +351,6 @@
   }
   .contact-form input:focus, .contact-form textarea:focus { box-shadow: 0 8px 30px rgba(96,165,250,0.12); transform: translateY(-2px); }
 
-  .form-row { display:flex; gap:10px; }
-  .form-row .col { flex:1; }
-
   .footer {
     padding:30px 0 60px;
     color:var(--muted);
@@ -346,7 +360,6 @@
     background: var(--card);
   }
 
-  /* responsive */
   @media (max-width:980px){
     .about-grid{ grid-template-columns: 1fr; text-align:center }
     .profile-card{ order:0; margin:0 auto }
@@ -360,20 +373,31 @@
     .skill-card{ width:100% }
   }
 
-  /* small helpers */
   .muted { color:var(--muted) }
   .small { font-size:0.85rem }
+
+  /* ✅ Move form-message styles here (avoid nested <style> inside body) */
+  #form-message {
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+  }
+  #form-message.show { opacity: 1; }
+  #form-message.hidden { display: none; }
   </style>
 </head>
 <body>
 
   <header>
     <div class="nav-inner site">
-      <a href="#" class="logo">
+      <a href="#home" class="logo">
         <span class="mark">EE</span>
         <div>
           <div style="font-size:0.95rem">Eshan Elahi</div>
-          <small style="color:var(--muted); font-weight:600">Software Engineer</small>
+          <small style="color:var(--muted); font-weight:600">Software Engineer </small>
         </div>
       </a>
 
@@ -397,7 +421,11 @@
     <section class="hero" aria-labelledby="intro-heading">
       <div class="hero-left" data-aos="fade-up" data-aos-duration="800">
         <h1 id="intro-heading">Hi there — I'm <span>Eshan</span> Elahi</h1>
-        <p class="lead">Software Engineer • <span id="typed">Machine Learning</span> • AI Agents • ChatBots</p>
+
+        <!-- ✅ SEO-friendly lead line with keywords -->
+        <p class="lead">
+          AI Engineer • Software Engineer • <span id="typed">Machine Learning</span> •  MERN Stack
+        </p>
 
         <div class="cta-row">
           <a class="btn" href="#projects"><i class="fas fa-rocket"></i> Explore Projects</a>
@@ -405,15 +433,20 @@
         </div>
 
         <div class="socials" data-aos="fade-right" data-aos-delay="120">
-          <a aria-label="LinkedIn" href="https://www.linkedin.com/in/eshan-elahi-3a7946357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a aria-label="GitHub" href="https://github.com/eshanelahi01" target="_blank"><i class="fab fa-github"></i></a>
-          <a aria-label="Email" href="elahieshan0@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+          <a aria-label="LinkedIn" href="https://www.linkedin.com/in/eshan-elahi-3a7946357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          <a aria-label="GitHub" href="https://github.com/eshanelahi01" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          <!-- ✅ FIXED mailto -->
+          <a aria-label="Email" href="mailto:elahieshan0@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
 
       <div class="hero-right" data-aos="zoom-in" data-aos-duration="900">
         <div class="hero-card" role="img" aria-label="Profile hero image">
-          <img src="./assets/images/myphoto.png" alt="Eshan Elahi profile photo" style="width:100%;height:auto;border-radius:12px;">
+          <img src="./assets/images/myphoto.png"
+               alt="Eshan Elahi AI Engineer and Machine Learning Developer profile photo"
+               loading="lazy"
+               decoding="async"
+               style="width:100%;height:auto;border-radius:12px;">
         </div>
       </div>
     </section>
@@ -424,28 +457,32 @@
 
       <div class="about-grid">
         <div class="profile-card" data-aos="fade-right" data-aos-delay="120">
-          <img src="./assets/images/myheroo.png" alt="Eshan Elahi" class="float">
+          <img src="./assets/images/myheroo.png"
+               alt="Eshan Elahi Software Engineer and AI Engineer"
+               class="float"
+               loading="lazy"
+               decoding="async">
           <div class="profile-meta">
             <h3>Eshan Elahi</h3>
-            <div class="tag">Software Engineer • ML & AI Agents Specialist</div>
+            <div class="tag">AI Engineer • Machine Learning Developer • Chatbot & Agents Specialist</div>
           </div>
         </div>
 
         <div class="about-content" data-aos="fade-left" data-aos-delay="160">
           <p>
-            Software Engineering student at PMAS Arid Agriculture University and Associate Software Engineer at ABDANIX 
-            specializing in machine learning and React development. I build production-ready 
-            ML pipelines, scalable REST APIs, and intelligent end-to-end systems using pretrained models.
+            I’m a Software Engineering student at PMAS Arid Agriculture University, Rawalpindi and a Software Engineer at ABDANIX Solutions.
+            I build AI-driven products including Machine Learning pipelines, model deployment workflows, AI chatbots, AI agents, RAG (Retrieval-Augmented Generation) systems,
+            and scalable REST APIs using FastAPI, Node.js, Express.js, and the MERN stack.
           </p>
 
           <div class="about-info">
             <div class="item"><i class="fas fa-envelope"></i> <span class="small">elahieshan0@gmail.com</span></div>
             <div class="item"><i class="fas fa-map-marker-alt"></i> <span class="small">Pakistan</span></div>
-            <div class="item"><i class="fas fa-graduation-cap"></i> <span class="small">UAAR RWP</span></div>
+            <div class="item"><i class="fas fa-graduation-cap"></i> <span class="small">PMAS UAAR Rawalpindi</span></div>
           </div>
 
           <div style="margin-top:18px;">
-            <a class="btn" href="./assets/files/resume.docx" target="_blank"><i class="fas fa-download"></i> Download Resume</a>
+            <a class="btn" href="./assets/files/resume.docx" target="_blank" rel="noopener"><i class="fas fa-download"></i> Download Resume</a>
             <a class="btn secondary" href="#projects" style="margin-left:10px"><i class="fas fa-folder-open"></i> View Work</a>
           </div>
         </div>
@@ -460,17 +497,17 @@
         <div class="skill-card" data-aos="zoom-in" data-aos-delay="60">
           <div style="display:flex;align-items:center">
             <i class="fas fa-code"></i>
-            <h4>Programming</h4>
+            <h4>Programming & Full-Stack Development</h4>
           </div>
-          <p>Python · JavaScript · React · MongoDB</p>
+          <p>Python · JavaScript · React · MERN Stack · MongoDB</p>
         </div>
 
         <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
           <div style="display:flex;align-items:center">
             <i class="fas fa-brain"></i>
-            <h4>Machine Learning</h4>
+            <h4>Machine Learning & MLOps</h4>
           </div>
-          <p>Model Training · Feature Engineering · Pretrained Models · Model Deployment · Real-time Inference</p>
+          <p>Model Training · Feature Engineering · Pretrained Models · Model Deployment · Real-time Inference · Pipeline Automation</p>
         </div>
 
         <div class="skill-card" data-aos="zoom-in" data-aos-delay="140">
@@ -484,9 +521,9 @@
         <div class="skill-card" data-aos="zoom-in" data-aos-delay="180">
           <div style="display:flex;align-items:center">
             <i class="fas fa-robot"></i>
-            <h4>Backend & REST APIs</h4>
+            <h4>Backend Engineering & REST APIs</h4>
           </div>
-          <p>Node.js · Express.js · Python (Flask/FastAPI) · RESTful Services · Authentication</p>
+          <p>FastAPI · Flask · Node.js · Express.js · RESTful Services · Authentication · Scalable Backend Systems</p>
         </div>
 
         <div class="skill-card" data-aos="zoom-in" data-aos-delay="220">
@@ -494,7 +531,7 @@
             <i class="fas fa-tools"></i>
             <h4>Tools & Platforms</h4>
           </div>
-          <p>Git · Docker · Flask · VS Code · Jupyter</p>
+          <p>Git · Docker · VS Code · Jupyter · Deployment Workflows</p>
         </div>
 
         <div class="skill-card" data-aos="zoom-in" data-aos-delay="260">
@@ -514,8 +551,8 @@
       <div class="card-grid" style="margin-top:12px">
         <div class="card" data-aos="flip-left" data-aos-delay="80">
           <h3>Bachelor of Science in Software Engineering</h3>
-          <p>PMAS Arid Agriculture University, Rawalpindi</p>
-          <small class="muted">OCT 2022 – Present</small>
+          <p>PMAS Arid Agriculture University, Rawalpindi (UAAR)</p>
+          <small class="muted">Oct 2022 – Present</small>
         </div>
       </div>
     </section>
@@ -525,35 +562,36 @@
       <div class="heading"><i class="fas fa-folder-open"></i> Projects</div>
 
       <div class="card-grid" style="margin-top:12px">
-       <div class="card" data-aos="fade-up" data-aos-delay="60">
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-      <i class="fas fa-bus" style="color:var(--accent)"></i>
-      <h3>SafarBot – AI-Powered Booking Platform (FYP)</h3>
-    </div>
-    <p>MERN-based booking platform enhanced with AI features, built for real-time interactions, scalable APIs, and intelligent workflow automation.</p>
-  </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="60">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+            <i class="fas fa-bus" style="color:var(--accent)"></i>
+            <h3>SafarBot – AI-Powered Booking Platform (FYP)</h3>
+          </div>
+          <p>MERN-based booking platform with AI automation, scalable REST APIs, and intelligent workflow orchestration for real-time booking interactions.</p>
+        </div>
 
         <div class="card" data-aos="fade-up" data-aos-delay="120">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-           <i class="fas fa-shield-alt" style="color:var(--accent)"></i>
-            <h3>Fraud Alert AI</h3>
+            <i class="fas fa-shield-alt" style="color:var(--accent)"></i>
+            <h3>Fraud Alert AI (Anomaly Detection)</h3>
           </div>
-          <p>AI-driven fraud detection system using pretrained models and pattern analysis for anomaly detection. Built to identify suspicious activities through intelligent rule-based and ML-assisted decision logic.</p>
+          <p>Fraud detection solution using pretrained models, anomaly detection, and rule+ML decision logic to identify suspicious patterns and generate alerts.</p>
         </div>
 
         <div class="card" data-aos="fade-up" data-aos-delay="180">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
             <i class="fas fa-camera" style="color:var(--accent)"></i>
-            <h3>Face Detection & Age/Gender Estimation System</h3>
+            <h3>Face Detection & Age/Gender Estimation (OpenCV)</h3>
           </div>
-          <p>Developed a real-time face detection system using OpenCV that detects faces from live camera input and estimates age and gender. Implemented Haar Cascade-based detection with real-time visualization.</p>
+          <p>Real-time face detection with OpenCV, age & gender estimation, and live camera visualization for practical computer vision use-cases.</p>
         </div>
+
         <div class="card" data-aos="fade-up" data-aos-delay="180">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-            <i class="fas fa-camera" style="color:var(--accent)"></i>
+            <i class="fas fa-microphone" style="color:var(--accent)"></i>
             <h3>Voice Booking System (ML-Based)</h3>
           </div>
-          <p>Developed an end-to-end ML pipeline (data → training → deployment) for a voice-based booking assistant. Focused on intelligent automation and real-time response handling.</p>
+          <p>End-to-end ML pipeline from data preparation to training and deployment for a voice-based booking assistant with real-time response handling.</p>
         </div>
       </div>
     </section>
@@ -566,13 +604,16 @@
         <div class="card" data-aos="fade-right" data-aos-delay="80">
           <h3>Python Programming Intern — ABDANIX Solutions</h3>
           <small class="muted">Sep 2025 – Nov 2025 | Remote</small>
-          <p style="margin-top:8px">Learn&Built desktop apps using Python, implemented modular OOP patterns for maintainability.</p>
+          <p style="margin-top:8px">Built Python desktop apps, practiced clean OOP patterns, and improved maintainability using modular architecture.</p>
         </div>
 
         <div class="card" data-aos="fade-right" data-aos-delay="140">
-          <h3>Junior Software Engineer— ABDANIX Solutions</h3>
+          <h3>Junior Software Engineer — ABDANIX Solutions</h3>
           <small class="muted">Dec 2025 – Present | On-site</small>
-          <p style="margin-top:8px">Design and deploy end-to-end machine learning pipelines, develop scalable REST APIs, implement AI-driven solutions using pretrained models for real-time insights, contribute to React-based frontends, and collaborate effectively using Git-based workflows.</p>
+          <p style="margin-top:8px">
+            Design and deploy machine learning pipelines, build scalable REST APIs with FastAPI/Node.js, implement AI-driven solutions using pretrained models for real-time insights,
+            contribute to React frontends, and collaborate using Git workflows.
+          </p>
         </div>
       </div>
     </section>
@@ -587,7 +628,10 @@
             <i class="fas fa-envelope"></i>
             <div>
               <h4 style="margin:0">Email</h4>
-              <div class="small muted"><a href="elahieshan0@gmail.com" style="color:var(--muted); text-decoration:none;">elahieshan0@gmail.com</a></div>
+              <!-- ✅ FIXED mailto -->
+              <div class="small muted">
+                <a href="mailto:elahieshan0@gmail.com" style="color:var(--muted); text-decoration:none;">elahieshan0@gmail.com</a>
+              </div>
             </div>
           </div>
 
@@ -595,7 +639,7 @@
             <i class="fab fa-linkedin"></i>
             <div>
               <h4 style="margin:0">LinkedIn</h4>
-              <div class="small muted"><a href="https://www.linkedin.com/in/eshan-elahi-3a7946357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" style="color:var(--muted); text-decoration:none;">linkedin.com/in/eshan-elahi-3a7946357</a></div>
+              <div class="small muted"><a href="https://www.linkedin.com/in/eshan-elahi-3a7946357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none;">linkedin.com/in/eshan-elahi-3a7946357</a></div>
             </div>
           </div>
 
@@ -603,49 +647,26 @@
             <i class="fab fa-github"></i>
             <div>
               <h4 style="margin:0">GitHub</h4>
-              <div class="small muted"><a href="https://github.com/eshanelahi01" target="_blank" style="color:var(--muted); text-decoration:none;">github.com/eshanelahi01</a></div>
+              <div class="small muted"><a href="https://github.com/eshanelahi01" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none;">github.com/eshanelahi01</a></div>
             </div>
           </div>
         </div>
 
-  <form id="contact-form" class="contact-form" 
-      action="https://formspree.io/f/mdalplgl" method="POST">
-  <div style="display:flex; gap:10px; margin-bottom:12px;">
-    <input type="text" name="name" placeholder="Your name" required>
-    <input type="email" name="email" placeholder="Your email" required>
-  </div>
-  <label for="message" class="small muted">Message</label>
-  <textarea id="message" name="message" rows="6" placeholder="Describe your message..." required></textarea>
-  <div style="display:flex; gap:10px; margin-top:12px;">
-    <button class="btn" type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
-    <button class="btn secondary" type="reset">Reset</button>
-  </div>
+        <form id="contact-form" class="contact-form"
+              action="https://formspree.io/f/mdalplgl" method="POST">
+          <div style="display:flex; gap:10px; margin-bottom:12px;">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+          </div>
+          <label for="message" class="small muted">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Describe your message..." required></textarea>
+          <div style="display:flex; gap:10px; margin-top:12px;">
+            <button class="btn" type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+            <button class="btn secondary" type="reset">Reset</button>
+          </div>
 
-  <!-- ✅ Feedback message box -->
-  <div id="form-message" class="hidden"></div>
-</form>
-
-<!-- ✅ Styles -->
-<style>
-  #form-message {
-    margin-top: 12px;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 14px;
-    opacity: 0;
-    transition: opacity 0.6s ease-in-out;
-  }
-
-  #form-message.show {
-    opacity: 1;
-  }
-
-  #form-message.hidden {
-    display: none;
-  }
-</style>
-
-
+          <div id="form-message" class="hidden"></div>
+        </form>
       </div>
     </section>
 
@@ -657,20 +678,14 @@
   <!-- AOS + small JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    // initialize AOS
-    AOS.init({
-      once: true,
-      duration: 700,
-      easing: 'cubic-bezier(.2,.8,.2,1)'
-    });
+    AOS.init({ once: true, duration: 700, easing: 'cubic-bezier(.2,.8,.2,1)' });
 
-    // Typewriter-ish effect for the skills text
     (function(){
-      const words = ['Machine Learning', 'Mern Stack', 'Python', 'Full-stack Development'];
+      const words = ['Machine Learning', 'MERN Stack', 'Python', 'FastAPI', 'AI Chatbots', 'AI Agents', 'RAG Systems'];
       const el = document.getElementById('typed');
       let i = 0, j = 0, forward = true;
       function tick(){
-        el.textContent = words[i].slice(0, j) + (j%2? '': '');
+        el.textContent = words[i].slice(0, j);
         if(forward) j++;
         else j--;
         if(j > words[i].length){
@@ -687,62 +702,60 @@
       tick();
     })();
 
-    // set current year
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
-    // Smooth scroll for nav links
     document.querySelectorAll('nav a').forEach(a=>{
       a.addEventListener('click', (e)=>{
         e.preventDefault();
         const href = a.getAttribute('href');
         if(!href || href === '#') return;
         document.querySelector(href).scrollIntoView({behavior:'smooth', block:'start'});
-        // active class
         document.querySelectorAll('nav a').forEach(n=>n.classList.remove('active'));
         a.classList.add('active');
       });
     });
   </script>
- <script>
-  const contactForm = document.getElementById("contact-form");
-  const formMessage = document.getElementById("form-message");
 
-  function showMessage(message, bgColor, textColor, autoHide = true) {
-    formMessage.innerHTML = message;
-    formMessage.style.background = bgColor;
-    formMessage.style.color = textColor;
-    formMessage.classList.remove("hidden");
-    setTimeout(() => formMessage.classList.add("show"), 50); // fade in
+  <script>
+    const contactForm = document.getElementById("contact-form");
+    const formMessage = document.getElementById("form-message");
 
-    if (autoHide) {
-      setTimeout(() => {
-        formMessage.classList.remove("show"); // fade out
-        setTimeout(() => formMessage.classList.add("hidden"), 600);
-      }, 4000); // disappears after 4s
-    }
-  }
+    function showMessage(message, bgColor, textColor, autoHide = true) {
+      formMessage.innerHTML = message;
+      formMessage.style.background = bgColor;
+      formMessage.style.color = textColor;
+      formMessage.classList.remove("hidden");
+      setTimeout(() => formMessage.classList.add("show"), 50);
 
-  contactForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-    var form = event.target;
-
-    showMessage("⏳ Sending your message...", "#f0f0f0", "#333", false);
-
-    fetch(form.action, {
-      method: form.method,
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
-    }).then(response => {
-      if (response.ok) {
-        showMessage("✅ Thanks for contacting! I'll get back to you soon.", "#d4edda", "#155724");
-        form.reset();
-      } else {
-        showMessage("❌ Oops! Something went wrong. Please try again.", "#f8d7da", "#721c24");
+      if (autoHide) {
+        setTimeout(() => {
+          formMessage.classList.remove("show");
+          setTimeout(() => formMessage.classList.add("hidden"), 600);
+        }, 4000);
       }
-    }).catch(error => {
-      showMessage("⚠️ Error: " + error.message, "#fff3cd", "#856404");
+    }
+
+    contactForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      var form = event.target;
+
+      showMessage("⏳ Sending your message...", "#f0f0f0", "#333", false);
+
+      fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          showMessage("✅ Thanks for contacting! I'll get back to you soon.", "#d4edda", "#155724");
+          form.reset();
+        } else {
+          showMessage("❌ Oops! Something went wrong. Please try again.", "#f8d7da", "#721c24");
+        }
+      }).catch(error => {
+        showMessage("⚠️ Error: " + error.message, "#fff3cd", "#856404");
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
