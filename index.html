@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eshan Elahi | AI Engineer and Software Engineer</title>
+  <meta
+    name="description"
+    content="Portfolio of Eshan Elahi, an AI Engineer and Software Engineer building machine learning systems, chatbots, agents, APIs, and full-stack products."
+  >
+  <meta
+    name="keywords"
+    content="Eshan Elahi, AI Engineer, Software Engineer, Machine Learning Developer, FastAPI, Node.js, React, MERN, Chatbots, AI Agents, RAG"
+  >
+  <meta name="author" content="Eshan Elahi">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://eshanelahi.netlify.app/">
 
-  <!-- ✅ SEO: Title + Description -->
-  <title>Eshan Elahi | AI Engineer & Machine Learning Developer (Chatbots, Agents, FastAPI)</title>
-  <meta name="description" content="Eshan Elahi is a Software Engineer and AI Engineer specializing in Machine Learning, AI Chatbots, AI Agents, RAG systems, MERN stack, FastAPI/Node.js REST APIs, and scalable backend solutions. Explore projects, skills, experience, and contact details." />
+  <meta property="og:title" content="Eshan Elahi | AI Engineer and Software Engineer">
+  <meta
+    property="og:description"
+    content="Explore projects, experience, and contact details for Eshan Elahi, focused on machine learning, AI systems, APIs, and full-stack products."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eshanelahi.netlify.app/">
+  <meta property="og:image" content="https://eshanelahi.netlify.app/assets/images/myphoto.png">
 
-  <!-- ✅ SEO: Keywords (not a major ranking factor, but fine to include) -->
-  <meta name="keywords" content="Eshan Elahi, Eshan Elahi portfolio, AI Engineer, Machine Learning Developer, Software Engineer, Chatbot Developer, AI Chatbots, AI Agents, RAG Developer, Retrieval Augmented Generation, FastAPI Developer, Node.js Developer, Express.js Developer, Python Developer, React Developer, MERN Stack Developer, Backend Developer, REST API Developer, MLOps, Model Deployment, Real-time Inference, OpenCV Developer, Fraud Detection AI, Voice Booking Agent, SafarBot, Full Stack Developer, Software Engineer Pakistan, AI Engineer Pakistan, Machine Learning Engineer Pakistan, Rawalpindi, PMAS Arid Agriculture University, UAAR Rawalpindi, ABDANIX Solutions" />
-  <meta name="author" content="Eshan Elahi" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eshanelahi.netlify.app/" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eshan Elahi | AI Engineer and Software Engineer">
+  <meta
+    name="twitter:description"
+    content="AI engineer portfolio featuring machine learning systems, chatbots, AI agents, and scalable product development."
+  >
+  <meta name="twitter:image" content="https://eshanelahi.netlify.app/assets/images/myphoto.png">
+  <meta name="theme-color" content="#0f172a">
 
-  <!-- ✅ Social Preview -->
-  <meta property="og:title" content="Eshan Elahi | AI Engineer & Machine Learning Developer" />
-  <meta property="og:description" content="AI Engineer building ML pipelines, AI chatbots, agents, and scalable APIs with FastAPI/Node.js. Explore projects and contact." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eshanelahi.netlify.app/" />
-  <!-- ⚠️ Create this image: /assets/images/preview.jpg (1200x630 recommended) -->
-  <meta property="og:image" content="https://eshanelahi.netlify.app/assets/images/preview.jpg" />
+  <link rel="shortcut icon" href="./assets/images/myhero.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+  <link rel="stylesheet" href="./styles.css">
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Eshan Elahi | AI Engineer & Machine Learning Developer" />
-  <meta name="twitter:description" content="AI Engineer building ML pipelines, AI chatbots, agents, and scalable APIs with FastAPI/Node.js." />
-  <meta name="twitter:image" content="https://eshanelahi.netlify.app/assets/images/preview.jpg" />
-
-  <meta name="theme-color" content="#2563eb" />
-
-  <!-- ✅ Favicon -->
-  <link rel="shortcut icon" id="favicon" href="./assets/images/favicon.jpg" type="image/x-jpg">
-
-  <!-- Font & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
-
-  <!-- AOS (scroll animations) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <!-- ✅ Structured Data (Google) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,7 +57,7 @@
     "name": "Eshan Elahi",
     "url": "https://eshanelahi.netlify.app/",
     "image": "https://eshanelahi.netlify.app/assets/images/myphoto.png",
-    "jobTitle": "Software Engineer / AI Engineer",
+    "jobTitle": "AI Engineer and Software Engineer",
     "worksFor": {
       "@type": "Organization",
       "name": "ABDANIX Solutions"
@@ -63,699 +72,361 @@
     ]
   }
   </script>
-
-  <style>
-  :root{
-    --bg: #f4f7fb;
-    --card: #eaf0fa;
-    --muted: #5a6b7a;
-    --accent: #2563eb;
-    --accent-2: #60a5fa;
-    --glass: rgba(96,165,250,0.08);
-    --glass-2: rgba(96,165,250,0.04);
-    --radius: 14px;
-    --maxw: 1150px;
-    --gap: 24px;
-    font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  }
-  *{box-sizing:border-box}
-  html,body{height:100%}
-  body{
-    margin:0;
-    background: linear-gradient(180deg, #f4f7fb 0%, #eaf0fa 100%);
-    color:#223046;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    line-height:1.5;
-  }
-
-  .site { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
-
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 60;
-    backdrop-filter: blur(6px);
-    border-bottom: 1px solid rgba(37,99,235,0.08);
-    background: linear-gradient(180deg, rgba(96,165,250,0.10), rgba(244,247,251,0.85));
-  }
-  .nav-inner{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:12px;
-    padding: 14px 20px;
-    max-width:var(--maxw);
-    margin:0 auto;
-  }
-  .logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-weight:700;
-    color:var(--accent);
-    text-decoration:none;
-    letter-spacing:0.6px;
-  }
-  .logo .mark{
-    display:inline-grid;
-    place-items:center;
-    width:44px;height:44px;border-radius:10px;
-    background:linear-gradient(135deg,var(--accent),var(--accent-2));
-    color:#fff;
-    font-weight:800;
-    box-shadow: 0 6px 18px rgba(96,165,250,0.12);
-  }
-
-  nav.navbar ul {
-    display:flex;
-    gap:16px;
-    list-style:none;
-    margin:0;
-    padding:0;
-    align-items:center;
-  }
-  nav.navbar a{
-    color:var(--muted);
-    text-decoration:none;
-    font-weight:600;
-    padding:8px 10px;
-    border-radius:8px;
-    transition: all 180ms ease;
-    font-size:0.95rem;
-  }
-  nav.navbar a:hover, nav.navbar a.active{
-    color:var(--accent);
-    background: linear-gradient(90deg, rgba(96,165,250,0.08), rgba(244,247,251,0.01));
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(96,165,250,0.10);
-  }
-
-  .hero{
-    padding: 80px 0 36px;
-    display:flex;
-    align-items:center;
-    gap:40px;
-  }
-  .hero-left{ flex:1; min-width:260px; }
-  .hero-right{
-    width:420px;
-    max-width:42%;
-    display:flex;
-    justify-content:center;
-  }
-  .hero h1{
-    font-size: clamp(1.6rem, 3.4vw, 2.4rem);
-    margin:0 0 10px;
-    line-height:1.05;
-    font-weight:800;
-    color:var(--accent);
-  }
-  .hero h1 span{ color: var(--accent-2); }
-  .hero .lead{
-    color:var(--muted);
-    margin:8px 0 20px;
-    font-size:1rem;
-  }
-  .cta-row{ display:flex; gap:12px; align-items:center; margin-top:14px; }
-  .btn {
-    display:inline-flex;
-    gap:10px;
-    align-items:center;
-    padding:10px 16px;
-    border-radius:12px;
-    background: linear-gradient(90deg,var(--accent),var(--accent-2));
-    color:#fff;
-    font-weight:700;
-    text-decoration:none;
-    box-shadow: 0 10px 30px rgba(96,165,250,0.09);
-    transition: transform 180ms ease, box-shadow 180ms ease;
-  }
-  .btn.secondary {
-    background:transparent;
-    color:var(--accent);
-    border:1px solid rgba(96,165,250,0.12);
-    font-weight:600;
-  }
-  .btn:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(96,165,250,0.18); }
-  .btn.secondary:hover { color:var(--accent-2); transform: translateY(-3px); }
-
-  .socials { margin-top:18px; display:flex; gap:12px; align-items:center; }
-  .socials a {
-    width:44px;height:44px;border-radius:10px;display:inline-grid;place-items:center;
-    background:var(--glass); color:var(--accent); text-decoration:none;
-    transition: all 180ms ease;
-    border: 1px solid rgba(96,165,250,0.08);
-  }
-  .socials a:hover { transform: translateY(-6px); color: #fff; background: linear-gradient(135deg,var(--accent),var(--accent-2)); box-shadow: 0 12px 28px rgba(96,165,250,0.12); }
-
-  .hero-card{
-    width:360px;
-    max-width:100%;
-    border-radius:20px;
-    padding:18px;
-    background: linear-gradient(180deg, rgba(96,165,250,0.04), rgba(244,247,251,0.01));
-    border: 1px solid rgba(96,165,250,0.08);
-    box-shadow: 0 20px 40px rgba(96,165,250,0.10);
-    display:flex;
-    justify-content:center;
-    transform: translateY(0);
-    transition: transform 350ms ease;
-  }
-  .hero-card img{ width:100%; height:auto; border-radius:12px; display:block; }
-  .hero-card:hover { transform: translateY(-8px) rotate(-0.6deg); }
-
-  .heading {
-    display:flex;
-    align-items:center;
-    gap:12px;
-    margin: 14px 0 28px;
-    font-size:1.1rem;
-    color:var(--accent);
-  }
-  .heading i{ color:var(--accent-2); font-size:1.05rem; }
-
-  .about {
-    padding: 28px 0 40px;
-    border-radius: 12px;
-    background: var(--card);
-  }
-  .about-grid{
-    display:grid;
-    grid-template-columns: 320px 1fr;
-    gap: var(--gap);
-    align-items:center;
-  }
-  .profile-card{
-    background: linear-gradient(180deg, rgba(96,165,250,0.04), rgba(244,247,251,0.01));
-    border-radius: var(--radius);
-    padding:18px;
-    border:1px solid var(--glass);
-    display:flex; flex-direction:column; gap:14px; align-items:center;
-  }
-  .profile-card img{
-    width:220px; height:220px; object-fit:cover; border-radius:16px;
-    box-shadow: 0 12px 30px rgba(96,165,250,0.18), 0 6px 18px rgba(96,165,250,0.12);
-    transition: transform 420ms cubic-bezier(.2,.9,.2,1.0);
-  }
-  .profile-card img.float { animation: float 6s ease-in-out infinite; }
-  @keyframes float {
-    0% { transform: translateY(0) }
-    50% { transform: translateY(-8px) }
-    100% { transform: translateY(0) }
-  }
-  .profile-meta { text-align:center; }
-  .profile-meta h3 { margin:0; font-size:1.3rem; color:var(--accent); }
-  .profile-meta .tag { color:var(--accent-2); font-weight:700; display:block; margin-top:6px; }
-
-  .about-content { color:var(--muted); font-size:0.98rem; }
-  .about-content p { margin:12px 0 16px; }
-  .about-info { display:flex; gap:14px; flex-wrap:wrap; margin-top:8px; color:var(--muted); }
-  .about-info .item { display:inline-flex; gap:8px; align-items:center; background:var(--glass-2); padding:8px 12px; border-radius:10px; border:1px solid rgba(96,165,250,0.08); color:var(--muted); }
-  .about-info i { color:var(--accent-2); }
-
-  .skills-container { display:flex; flex-wrap:wrap; gap:20px; }
-  .skill-card {
-    background: linear-gradient(180deg, rgba(96,165,250,0.02), rgba(244,247,251,0.02));
-    padding:18px;
-    border-radius:14px;
-    width:calc(33.333% - 20px);
-    min-width:220px;
-    border:1px solid var(--glass);
-    transition: transform 250ms ease, box-shadow 250ms ease;
-    text-align:left;
-  }
-  .skill-card i { font-size:22px; color:var(--accent-2); margin-right:10px; }
-  .skill-card h4 { margin:8px 0 8px; color:var(--accent); font-size:1rem; }
-  .skill-card p { color:var(--muted); margin:0; font-size:0.95rem; }
-  .skill-card:hover { transform: translateY(-8px); box-shadow: 0 22px 48px rgba(96,165,250,0.18); }
-
-  .card-grid {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap:18px;
-  }
-  .card {
-    background: linear-gradient(180deg, rgba(96,165,250,0.015), rgba(244,247,251,0.01));
-    padding:18px; border-radius:14px; border:1px solid var(--glass);
-    transition: transform 260ms ease, box-shadow 260ms ease;
-  }
-  .card h3{ margin:0 0 8px; color:var(--accent); font-size:1.02rem }
-  .card p{ color:var(--muted); margin:0; font-size:0.94rem }
-  .card:hover { transform: translateY(-8px); box-shadow: 0 30px 70px rgba(96,165,250,0.18) }
-
-  .timeline { display:flex; flex-direction:column; gap:12px; }
-
-  .contact {
-    background: linear-gradient(180deg, #eaf0fa 0%, #f4f7fb 100%);
-    border-radius: 12px;
-    padding: 32px 0 44px;
-    margin-top: 32px;
-  }
-  .contact-grid {
-    display:grid;
-    grid-template-columns: 1fr 360px;
-    gap:22px;
-    align-items:start;
-    background: transparent;
-  }
-  .contact-card {
-    display:flex;
-    flex-direction:column;
-    gap:14px;
-    padding:18px;
-    border-radius:12px;
-    border:1px solid var(--glass);
-    background: linear-gradient(180deg, rgba(96,165,250,0.01), rgba(244,247,251,0.02));
-    box-shadow: 0 8px 32px rgba(96,165,250,0.07);
-  }
-  .contact-card .meta { display:flex; gap:12px; align-items:center; }
-  .contact-card i { font-size:20px; color:var(--accent-2); }
-
-  .contact-form {
-    padding:18px; border-radius:12px; border:1px solid var(--glass);
-    background:linear-gradient(180deg, rgba(96,165,250,0.01), rgba(244,247,251,0.02));
-    box-shadow: 0 8px 32px rgba(96,165,250,0.07);
-  }
-  .contact-form label { display:block; font-size:0.85rem; color:var(--muted); margin-bottom:6px; }
-  .contact-form input, .contact-form textarea {
-    width:100%;
-    padding:12px 14px;
-    border-radius:10px;
-    border:1px solid rgba(96,165,250,0.08);
-    background: rgba(244,247,251,0.02);
-    color:#223046;
-    resize:vertical;
-    outline:none;
-    transition: box-shadow 160ms ease, transform 160ms ease;
-  }
-  .contact-form input:focus, .contact-form textarea:focus { box-shadow: 0 8px 30px rgba(96,165,250,0.12); transform: translateY(-2px); }
-
-  .footer {
-    padding:30px 0 60px;
-    color:var(--muted);
-    text-align:center;
-    border-top:1px solid rgba(96,165,250,0.08);
-    margin-top:40px;
-    background: var(--card);
-  }
-
-  @media (max-width:980px){
-    .about-grid{ grid-template-columns: 1fr; text-align:center }
-    .profile-card{ order:0; margin:0 auto }
-    .hero{ flex-direction:column-reverse; gap:28px }
-    .hero-right{ width:100%; max-width:420px }
-    .skills-container .skill-card{ width:calc(50% - 12px) }
-    .contact-grid{ grid-template-columns:1fr; }
-  }
-  @media (max-width:560px){
-    nav.navbar ul{ display:none }
-    .skill-card{ width:100% }
-  }
-
-  .muted { color:var(--muted) }
-  .small { font-size:0.85rem }
-
-  /* ✅ Move form-message styles here (avoid nested <style> inside body) */
-  #form-message {
-    margin-top: 12px;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 14px;
-    opacity: 0;
-    transition: opacity 0.6s ease-in-out;
-  }
-  #form-message.show { opacity: 1; }
-  #form-message.hidden { display: none; }
-  </style>
 </head>
 <body>
+  <div class="page-shell">
+    <div class="bg-orb bg-orb-a"></div>
+    <div class="bg-orb bg-orb-b"></div>
+    <div class="grid-overlay"></div>
 
-  <header>
-    <div class="nav-inner site">
-      <a href="#home" class="logo">
-        <span class="mark">EE</span>
-        <div>
-          <div style="font-size:0.95rem">Eshan Elahi</div>
-          <small style="color:var(--muted); font-weight:600">Software Engineer </small>
-        </div>
-      </a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="Go to top of page">
+          <span class="brand-mark">EE</span>
+          <span class="brand-copy">
+            <strong>Eshan Elahi</strong>
+            <small>Software Engineer</small>
+          </span>
+        </a>
 
-      <nav class="navbar" aria-label="Main navigation">
-        <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-  <main class="site" id="home">
-
-    <!-- HERO -->
-    <section class="hero" aria-labelledby="intro-heading">
-      <div class="hero-left" data-aos="fade-up" data-aos-duration="800">
-        <h1 id="intro-heading">Hi there — I'm <span>Eshan</span> Elahi</h1>
-
-        <!-- ✅ SEO-friendly lead line with keywords -->
-        <p class="lead">
-          AI Engineer • Software Engineer • <span id="typed">Machine Learning</span> •  MERN Stack
-        </p>
-
-        <div class="cta-row">
-          <a class="btn" href="#projects"><i class="fas fa-rocket"></i> Explore Projects</a>
-          <a class="btn secondary" href="#contact"><i class="fas fa-paper-plane"></i> Get In Touch</a>
-        </div>
-
-        <div class="socials" data-aos="fade-right" data-aos-delay="120">
-          <a aria-label="LinkedIn" href="https://www.linkedin.com/in/eshan-elahi-3a7946357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-          <a aria-label="GitHub" href="https://github.com/eshanelahi01" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-          <!-- ✅ FIXED mailto -->
-          <a aria-label="Email" href="mailto:elahieshan0@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
+        <a class="button button-ghost desktop-only" href="./assets/files/resume.pdf" target="_blank" rel="noopener">
+          Resume
+        </a>
       </div>
+    </header>
 
-      <div class="hero-right" data-aos="zoom-in" data-aos-duration="900">
-        <div class="hero-card" role="img" aria-label="Profile hero image">
-          <img src="./assets/images/myphoto.png"
-               alt="Eshan Elahi AI Engineer and Machine Learning Developer profile photo"
-               loading="lazy"
-               decoding="async"
-               style="width:100%;height:auto;border-radius:12px;">
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="about" id="about" data-aos="fade-up" data-aos-duration="800">
-      <div class="heading"><i class="fas fa-user-alt"></i> About <strong>Me</strong></div>
-
-      <div class="about-grid">
-        <div class="profile-card" data-aos="fade-right" data-aos-delay="120">
-          <img src="./assets/images/myheroo.png"
-               alt="Eshan Elahi Software Engineer and AI Engineer"
-               class="float"
-               loading="lazy"
-               decoding="async">
-          <div class="profile-meta">
-            <h3>Eshan Elahi</h3>
-            <div class="tag">AI Engineer • Machine Learning Developer • Chatbot & Agents Specialist</div>
-          </div>
-        </div>
-
-        <div class="about-content" data-aos="fade-left" data-aos-delay="160">
-          <p>
-            I’m a Software Engineering student at PMAS Arid Agriculture University, Rawalpindi and a Software Engineer at ABDANIX Solutions.
-            I build AI-driven products including Machine Learning pipelines, model deployment workflows, AI chatbots, AI agents, RAG (Retrieval-Augmented Generation) systems,
-            and scalable REST APIs using FastAPI, Node.js, Express.js, and the MERN stack.
+    <main id="home">
+      <section class="hero-section container section">
+        <div class="hero-copy reveal">
+          <h1>
+            I am <span class="headline-gradient">Eshan Elahi</span>
+            building modern digital products.
+          </h1>
+          <p class="hero-text">
+            Software Engineer delivering modern MERN stack web applications, scalable digital platforms, and intelligent AI-powered solutions designed for real-world impact.
           </p>
 
-          <div class="about-info">
-            <div class="item"><i class="fas fa-envelope"></i> <span class="small">elahieshan0@gmail.com</span></div>
-            <div class="item"><i class="fas fa-map-marker-alt"></i> <span class="small">Pakistan</span></div>
-            <div class="item"><i class="fas fa-graduation-cap"></i> <span class="small">PMAS UAAR Rawalpindi</span></div>
+          <div class="hero-type-row">
+            <span class="type-label">Focused on</span>
+            <span class="type-chip">
+              <span id="typed-text">Machine Learning Systems</span>
+            </span>
           </div>
 
-          <div style="margin-top:18px;">
-            <a class="btn" href="./assets/files/resume.docx" target="_blank" rel="noopener"><i class="fas fa-download"></i> Download Resume</a>
-            <a class="btn secondary" href="#projects" style="margin-left:10px"><i class="fas fa-folder-open"></i> View Work</a>
+          <div class="hero-actions">
+            <a class="button" href="#projects">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+              View Projects
+            </a>
+            <a class="button button-ghost" href="#contact">
+              <i class="fa-regular fa-paper-plane"></i>
+              Contact Me
+            </a>
+          </div>
+
+          <div class="social-row">
+            <a href="https://github.com/eshanelahi01" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/eshan-elahi-3a7946357" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:elahieshan0@gmail.com" aria-label="Email">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section class="skills" id="skills" data-aos="fade-up" data-aos-duration="800">
-      <div class="heading"><i class="fas fa-laptop-code"></i> Skills & <strong>Abilities</strong></div>
-
-      <div class="skills-container">
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="60">
-          <div style="display:flex;align-items:center">
-            <i class="fas fa-code"></i>
-            <h4>Programming & Full-Stack Development</h4>
+        <div class="hero-visual reveal">
+          <div class="visual-card profile-panel">
+            <img src="./assets/images/myphoto.png" alt="Portrait of Eshan Elahi">
+            <div class="profile-summary">
+              <h2>Eshan Elahi</h2>
+              <p>Software Engineer focused on MERN stack development and AI-integrated product experiences.</p>
+            </div>
           </div>
-          <p>Python · JavaScript · React · MERN Stack · MongoDB</p>
+        </div>
+      </section>
+
+      <section id="about" class="container section">
+        <div class="section-head reveal">
+          <p class="section-kicker">About</p>
+          <h2>Creating modern web platforms with strong engineering foundations and practical AI integration.</h2>
         </div>
 
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
-          <div style="display:flex;align-items:center">
-            <i class="fas fa-brain"></i>
-            <h4>Machine Learning & MLOps</h4>
-          </div>
-          <p>Model Training · Feature Engineering · Pretrained Models · Model Deployment · Real-time Inference · Pipeline Automation</p>
+        <div class="about-grid">
+          <article class="glass-card reveal">
+            <p>
+              I am a Software Engineering student at PMAS Arid Agriculture University, Rawalpindi, and a Junior
+              Software Engineer at ABDANIX Solutions. I work across frontend, backend, and AI-focused development to
+              build products that are reliable, scalable, and user-centered.
+            </p>
+            <p>
+              My focus is on modern MERN stack applications, business websites, scalable APIs, and AI-enhanced digital
+              experiences including chatbots, intelligent workflows, and data-driven product features.
+            </p>
+          </article>
+
+          <aside class="glass-card facts-card reveal">
+            <div class="fact-item">
+              <span class="fact-label">Location</span>
+              <strong>Pakistan</strong>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">University</span>
+              <strong>PMAS UAAR Rawalpindi</strong>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Current role</span>
+              <strong>Junior Software Engineer</strong>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Focus</span>
+              <strong>MERN Stack and AI Solutions</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="work" class="container section">
+        <div class="section-head reveal">
+          <p class="section-kicker">Capabilities</p>
+          <h2>Professional capabilities across product engineering, web platforms, and intelligent systems.</h2>
         </div>
 
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="140">
-          <div style="display:flex;align-items:center">
-            <i class="fas fa-network-wired"></i>
-            <h4>Frontend Development</h4>
-          </div>
-          <p>React.js · JavaScript (ES6+) · Responsive UI · Component Architecture · API Integration</p>
+        <div class="capability-grid">
+          <article class="capability-card reveal">
+            <span class="capability-index">01</span>
+            <h3>MERN stack application development</h3>
+            <p>Building responsive, full-stack web applications with React, Node.js, Express.js, and MongoDB for real business use.</p>
+            <div class="capability-tags">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>MERN</span>
+              <span>MongoDB</span>
+            </div>
+          </article>
+          <article class="capability-card reveal">
+            <span class="capability-index">02</span>
+            <h3>Scalable backend engineering</h3>
+            <p>Designing APIs, backend workflows, authentication systems, and service logic that support performance and growth.</p>
+            <div class="capability-tags">
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>FastAPI</span>
+              <span>MySQL</span>
+            </div>
+          </article>
+          <article class="capability-card reveal">
+            <span class="capability-index">03</span>
+            <h3>AI-integrated product experiences</h3>
+            <p>Integrating chatbots, AI agents, automation, and intelligent features into modern applications and user journeys.</p>
+            <div class="capability-tags">
+              <span>AI Chatbots</span>
+              <span>AI Agents</span>
+              <span>Automation</span>
+              <span>RAG</span>
+            </div>
+          </article>
+          <article class="capability-card reveal">
+            <span class="capability-index">04</span>
+            <h3>Modern frontend and product polish</h3>
+            <p>Crafting clean interfaces, responsive layouts, and premium digital experiences with attention to usability and detail.</p>
+            <div class="capability-tags">
+              <span>Responsive UI</span>
+              <span>UX Focus</span>
+              <span>Frontend</span>
+              <span>Web Design</span>
+            </div>
+          </article>
         </div>
 
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="180">
-          <div style="display:flex;align-items:center">
-            <i class="fas fa-robot"></i>
-            <h4>Backend Engineering & REST APIs</h4>
-          </div>
-          <p>FastAPI · Flask · Node.js · Express.js · RESTful Services · Authentication · Scalable Backend Systems</p>
+      </section>
+
+      <section id="projects" class="container section">
+        <div class="section-head reveal">
+          <p class="section-kicker">Projects</p>
+          <h2>Selected work across booking platforms, AI automation, and intelligent web products.</h2>
         </div>
 
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="220">
-          <div style="display:flex;align-items:center">
-            <i class="fas fa-tools"></i>
-            <h4>Tools & Platforms</h4>
-          </div>
-          <p>Git · Docker · VS Code · Jupyter · Deployment Workflows</p>
+        <div class="project-grid">
+          <article class="project-card project-feature reveal">
+            <div class="project-badge">Featured</div>
+            <h3>SafarBot</h3>
+            <p>
+              AI-powered booking platform built with a MERN-based architecture, scalable backend services, and intelligent
+              automation designed to improve real-time travel and booking workflows.
+            </p>
+            <div class="tag-row">
+              <span>MERN</span>
+              <span>AI Automation</span>
+              <span>REST APIs</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <h3>Fraud Alert AI</h3>
+            <p>Intelligent fraud detection solution using anomaly detection, pretrained models, and hybrid decision logic for faster risk identification.</p>
+            <div class="tag-row">
+              <span>ML</span>
+              <span>Anomaly Detection</span>
+              <span>Alerts</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <h3>Face Detection and Age/Gender Estimation</h3>
+            <p>Computer vision application using OpenCV for real-time face detection and live age and gender estimation.</p>
+            <div class="tag-row">
+              <span>OpenCV</span>
+              <span>Computer Vision</span>
+              <span>Realtime</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <h3>Voice Booking System</h3>
+            <p>Voice-enabled booking assistant developed through an end-to-end machine learning pipeline from preparation to deployment.</p>
+            <div class="tag-row">
+              <span>Speech</span>
+              <span>ML Pipeline</span>
+              <span>Deployment</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="container section">
+        <div class="section-head reveal">
+          <p class="section-kicker">Journey</p>
+          <h2>Academic and professional experience shaping a strong foundation in software and AI engineering.</h2>
         </div>
 
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="260">
-          <div style="display:flex;align-items:center">
-            <i class="fas fa-database"></i>
-            <h4>Databases</h4>
-          </div>
-          <p>MongoDB · MySQL · Oracle</p>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Oct 2022 - Present</span>
+              <h3>BS Software Engineering</h3>
+              <p>PMAS Arid Agriculture University, Rawalpindi</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Sep 2025 - Nov 2025</span>
+              <h3>Python Programming Intern at ABDANIX Solutions</h3>
+              <p>Built Python applications, strengthened object-oriented design practices, and contributed to cleaner, more maintainable software architecture.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Dec 2025 - Present</span>
+              <h3>Junior Software Engineer at ABDANIX Solutions</h3>
+              <p>Contributing to machine learning pipelines, API development, AI-driven product features, and production-ready web solutions.</p>
+            </div>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- EDUCATION -->
-    <section class="education" id="education" data-aos="fade-up" data-aos-duration="800">
-      <div class="heading"><i class="fas fa-graduation-cap"></i> Education</div>
-
-      <div class="card-grid" style="margin-top:12px">
-        <div class="card" data-aos="flip-left" data-aos-delay="80">
-          <h3>Bachelor of Science in Software Engineering</h3>
-          <p>PMAS Arid Agriculture University, Rawalpindi (UAAR)</p>
-          <small class="muted">Oct 2022 – Present</small>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="projects" id="projects" data-aos="fade-up" data-aos-duration="800">
-      <div class="heading"><i class="fas fa-folder-open"></i> Projects</div>
-
-      <div class="card-grid" style="margin-top:12px">
-        <div class="card" data-aos="fade-up" data-aos-delay="60">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-            <i class="fas fa-bus" style="color:var(--accent)"></i>
-            <h3>SafarBot – AI-Powered Booking Platform (FYP)</h3>
-          </div>
-          <p>MERN-based booking platform with AI automation, scalable REST APIs, and intelligent workflow orchestration for real-time booking interactions.</p>
-        </div>
-
-        <div class="card" data-aos="fade-up" data-aos-delay="120">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-            <i class="fas fa-shield-alt" style="color:var(--accent)"></i>
-            <h3>Fraud Alert AI (Anomaly Detection)</h3>
-          </div>
-          <p>Fraud detection solution using pretrained models, anomaly detection, and rule+ML decision logic to identify suspicious patterns and generate alerts.</p>
-        </div>
-
-        <div class="card" data-aos="fade-up" data-aos-delay="180">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-            <i class="fas fa-camera" style="color:var(--accent)"></i>
-            <h3>Face Detection & Age/Gender Estimation (OpenCV)</h3>
-          </div>
-          <p>Real-time face detection with OpenCV, age & gender estimation, and live camera visualization for practical computer vision use-cases.</p>
-        </div>
-
-        <div class="card" data-aos="fade-up" data-aos-delay="180">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-            <i class="fas fa-microphone" style="color:var(--accent)"></i>
-            <h3>Voice Booking System (ML-Based)</h3>
-          </div>
-          <p>End-to-end ML pipeline from data preparation to training and deployment for a voice-based booking assistant with real-time response handling.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section class="experience" id="experience" data-aos="fade-up" data-aos-duration="800">
-      <div class="heading"><i class="fas fa-briefcase"></i> Experience</div>
-
-      <div class="timeline" style="margin-top:12px">
-        <div class="card" data-aos="fade-right" data-aos-delay="80">
-          <h3>Python Programming Intern — ABDANIX Solutions</h3>
-          <small class="muted">Sep 2025 – Nov 2025 | Remote</small>
-          <p style="margin-top:8px">Built Python desktop apps, practiced clean OOP patterns, and improved maintainability using modular architecture.</p>
-        </div>
-
-        <div class="card" data-aos="fade-right" data-aos-delay="140">
-          <h3>Junior Software Engineer — ABDANIX Solutions</h3>
-          <small class="muted">Dec 2025 – Present | On-site</small>
-          <p style="margin-top:8px">
-            Design and deploy machine learning pipelines, build scalable REST APIs with FastAPI/Node.js, implement AI-driven solutions using pretrained models for real-time insights,
-            contribute to React frontends, and collaborate using Git workflows.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact" data-aos="fade-up" data-aos-duration="800">
-      <div class="heading"><i class="fas fa-headset"></i> Get in <strong>Touch</strong></div>
-
-      <div class="contact-grid" style="margin-top:12px">
-        <div class="contact-card" data-aos="fade-right" data-aos-delay="60">
-          <div class="meta">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <h4 style="margin:0">Email</h4>
-              <!-- ✅ FIXED mailto -->
-              <div class="small muted">
-                <a href="mailto:elahieshan0@gmail.com" style="color:var(--muted); text-decoration:none;">elahieshan0@gmail.com</a>
+      <section id="contact" class="container section contact-section">
+        <div class="contact-panel reveal">
+          <div class="contact-layout">
+            <div class="contact-copy">
+              <div class="section-head">
+                <p class="section-kicker">Contact</p>
+                <h2>Let us create a modern digital product with strong engineering and meaningful user impact.</h2>
+              </div>
+              <p>
+                If you are hiring, collaborating, or planning a product that needs MERN stack development or AI integration, I would be glad to connect.
+              </p>
+              <div class="contact-list">
+                <a href="mailto:elahieshan0@gmail.com" aria-label="Email">
+                  <i class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="https://github.com/eshanelahi01" target="_blank" rel="noopener" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/eshan-elahi-3a7946357" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
               </div>
             </div>
-          </div>
 
-          <div class="meta">
-            <i class="fab fa-linkedin"></i>
-            <div>
-              <h4 style="margin:0">LinkedIn</h4>
-              <div class="small muted"><a href="https://www.linkedin.com/in/eshan-elahi-3a7946357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none;">linkedin.com/in/eshan-elahi-3a7946357</a></div>
-            </div>
-          </div>
-
-          <div class="meta">
-            <i class="fab fa-github"></i>
-            <div>
-              <h4 style="margin:0">GitHub</h4>
-              <div class="small muted"><a href="https://github.com/eshanelahi01" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none;">github.com/eshanelahi01</a></div>
-            </div>
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/mdalplgl" method="POST">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required>
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="Your email" required>
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="3" placeholder="Tell me about your project or opportunity" required></textarea>
+              </label>
+              <div class="form-actions">
+                <button class="button" type="submit">
+                  <i class="fa-regular fa-paper-plane"></i>
+                  Send Message
+                </button>
+                <a class="button button-ghost" href="./assets/files/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+              </div>
+              <div id="form-message" class="form-message" aria-live="polite"></div>
+            </form>
           </div>
         </div>
+      </section>
+    </main>
 
-        <form id="contact-form" class="contact-form"
-              action="https://formspree.io/f/mdalplgl" method="POST">
-          <div style="display:flex; gap:10px; margin-bottom:12px;">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-          </div>
-          <label for="message" class="small muted">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="Describe your message..." required></textarea>
-          <div style="display:flex; gap:10px; margin-top:12px;">
-            <button class="btn" type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
-            <button class="btn secondary" type="reset">Reset</button>
-          </div>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand-block">
+          <h3>Eshan Elahi</h3>
+          <p>
+            Premium software engineering services focused on MERN stack development, scalable web platforms, and
+            AI-powered digital solutions built for modern businesses.
+          </p>
+        </div>
 
-          <div id="form-message" class="hidden"></div>
-        </form>
+        <div class="footer-links-block">
+          <h3>Quick Links</h3>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer-contact-block">
+          <h3>Contact</h3>
+          <div class="footer-contact-list">
+            <a href="mailto:elahieshan0@gmail.com">elahieshan0@gmail.com</a>
+            <a href="https://github.com/eshanelahi01" target="_blank" rel="noopener">github.com/eshanelahi01</a>
+            <a href="https://www.linkedin.com/in/eshan-elahi-3a7946357" target="_blank" rel="noopener">linkedin.com/in/eshan-elahi-3a7946357</a>
+          </div>
+        </div>
       </div>
-    </section>
 
-    <footer class="footer">
-      <div class="muted small">© <span id="current-year"></span> Eshan Elahi</div>
+      <div class="container footer-bottom">
+        <p>Copyright <span id="current-year"></span> Eshan Elahi. All rights reserved.</p>
+      </div>
     </footer>
-  </main>
+  </div>
 
-  <!-- AOS + small JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ once: true, duration: 700, easing: 'cubic-bezier(.2,.8,.2,1)' });
-
-    (function(){
-      const words = ['Machine Learning', 'MERN Stack', 'Python', 'FastAPI', 'AI Chatbots', 'AI Agents', 'RAG Systems'];
-      const el = document.getElementById('typed');
-      let i = 0, j = 0, forward = true;
-      function tick(){
-        el.textContent = words[i].slice(0, j);
-        if(forward) j++;
-        else j--;
-        if(j > words[i].length){
-          forward = false;
-          setTimeout(tick, 900);
-          return;
-        }
-        if(j === 0 && !forward){
-          forward = true;
-          i = (i+1) % words.length;
-        }
-        setTimeout(tick, forward ? 90 : 40);
-      }
-      tick();
-    })();
-
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-
-    document.querySelectorAll('nav a').forEach(a=>{
-      a.addEventListener('click', (e)=>{
-        e.preventDefault();
-        const href = a.getAttribute('href');
-        if(!href || href === '#') return;
-        document.querySelector(href).scrollIntoView({behavior:'smooth', block:'start'});
-        document.querySelectorAll('nav a').forEach(n=>n.classList.remove('active'));
-        a.classList.add('active');
-      });
-    });
-  </script>
-
-  <script>
-    const contactForm = document.getElementById("contact-form");
-    const formMessage = document.getElementById("form-message");
-
-    function showMessage(message, bgColor, textColor, autoHide = true) {
-      formMessage.innerHTML = message;
-      formMessage.style.background = bgColor;
-      formMessage.style.color = textColor;
-      formMessage.classList.remove("hidden");
-      setTimeout(() => formMessage.classList.add("show"), 50);
-
-      if (autoHide) {
-        setTimeout(() => {
-          formMessage.classList.remove("show");
-          setTimeout(() => formMessage.classList.add("hidden"), 600);
-        }, 4000);
-      }
-    }
-
-    contactForm.addEventListener("submit", function(event) {
-      event.preventDefault();
-      var form = event.target;
-
-      showMessage("⏳ Sending your message...", "#f0f0f0", "#333", false);
-
-      fetch(form.action, {
-        method: form.method,
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      }).then(response => {
-        if (response.ok) {
-          showMessage("✅ Thanks for contacting! I'll get back to you soon.", "#d4edda", "#155724");
-          form.reset();
-        } else {
-          showMessage("❌ Oops! Something went wrong. Please try again.", "#f8d7da", "#721c24");
-        }
-      }).catch(error => {
-        showMessage("⚠️ Error: " + error.message, "#fff3cd", "#856404");
-      });
-    });
-  </script>
+  <script src="./script.js"></script>
 </body>
 </html>
