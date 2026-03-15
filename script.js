@@ -1,10 +1,10 @@
 const typedWords = [
-  "MERN Stack Apps",
-  "AI-Powered Websites",
-  "Scalable Web Platforms",
-  "Modern Business Solutions",
-  "Intelligent User Experiences",
-  "Full-Stack Product Systems"
+  "Full-Stack Web Apps",
+  "MERN and FastAPI Systems",
+  "Scalable Backend APIs",
+  "AI-Powered Web Products",
+  "Business Website Builds",
+  "Modern Digital Platforms"
 ];
 
 const typedText = document.getElementById("typed-text");
