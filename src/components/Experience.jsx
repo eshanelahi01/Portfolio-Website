@@ -1,52 +1,19 @@
-import { useEffect, useRef } from 'react'
-
-const timeline = [
-  {
-    date: 'Oct 2022 - Present',
-    title: 'BS Software Engineering',
-    description: 'PMAS Arid Agriculture University, Rawalpindi',
-  },
-  {
-    date: 'Apr 2025 - Jul 2025',
-    title: 'Full Stack Developer Intern at ABDANIX Solutions',
-    description: 'Contributed to frontend and backend development, supported responsive web experiences, and helped deliver full-stack features for production-focused projects.',
-  },
-  {
-    date: 'Jul 2025 - Present',
-    title: 'Software Engineer at ABDANIX Solutions',
-    description: 'Contributing to full-stack product development, API engineering, business websites, and AI-integrated features for production-ready solutions.',
-  },
-]
+import { experienceTimeline } from '../data/siteContent'
+import useReveal from '../hooks/useReveal'
 
 export default function Experience() {
-  const ref = useRef(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add('is-visible')
-        })
-      },
-      { threshold: 0.12 }
-    )
-
-    const els = ref.current?.querySelectorAll('.reveal')
-    els?.forEach((el) => observer.observe(el))
-
-    return () => observer.disconnect()
-  }, [])
+  const ref = useReveal({ threshold: 0.12 })
 
   return (
-    <section id="experience" className="container section" ref={ref}>
+    <section id="experience" className="container section" ref={ref} aria-labelledby="experience-title">
       <div className="section-head reveal">
-        <p className="section-kicker">Journey</p>
-        <h2>Academic and professional experience shaping strong foundations in software engineering.</h2>
+        <p className="section-kicker">Experience</p>
+        <h2 id="experience-title">Academic and professional milestones shaping a stronger foundation in software engineering.</h2>
       </div>
 
       <div className="timeline">
-        {timeline.map((item, i) => (
-          <article key={i} className={`timeline-item reveal reveal-delay-${i + 1}`}>
+        {experienceTimeline.map((item, index) => (
+          <article key={item.title} className={`timeline-item reveal reveal-delay-${(index % 4) + 1}`}>
             <div className="timeline-dot" />
             <div className="timeline-card">
               <span className="timeline-date">{item.date}</span>

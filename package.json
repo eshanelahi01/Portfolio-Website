@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "generate:seo": "node scripts/generate-seo-assets.mjs",
+    "prebuild": "npm run generate:seo",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "indexnow": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
-    "gsap": "^3.12.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

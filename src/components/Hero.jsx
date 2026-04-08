@@ -1,71 +1,53 @@
 import { useEffect, useRef, useState } from 'react'
-
-const typedWords = [
-  'Full-Stack Web Apps',
-  'MERN & FastAPI Systems',
-  'Scalable Backend APIs',
-  'AI-Powered Web Products',
-  'Business Website Builds',
-  'Modern Digital Platforms',
-]
+import { heroHighlights, heroTypedWords, siteConfig } from '../data/siteContent'
+import useReveal from '../hooks/useReveal'
 
 export default function Hero() {
   const [displayText, setDisplayText] = useState('')
   const indexRef = useRef({ word: 0, char: 0, deleting: false })
-  const sectionRef = useRef(null)
+  const sectionRef = useReveal({ threshold: 0.1 })
 
   useEffect(() => {
     let timeout
+
     const tick = () => {
       const { word, char, deleting } = indexRef.current
-      const currentWord = typedWords[word]
+      const currentWord = heroTypedWords[word]
 
       if (!deleting && char < currentWord.length) {
-        indexRef.current.char++
+        indexRef.current.char += 1
         setDisplayText(currentWord.slice(0, indexRef.current.char))
         timeout = setTimeout(tick, 65)
       } else if (!deleting && char >= currentWord.length) {
         indexRef.current.deleting = true
         timeout = setTimeout(tick, 1600)
       } else if (deleting && char > 0) {
-        indexRef.current.char--
+        indexRef.current.char -= 1
         setDisplayText(currentWord.slice(0, indexRef.current.char))
         timeout = setTimeout(tick, 35)
       } else {
         indexRef.current.deleting = false
-        indexRef.current.word = (word + 1) % typedWords.length
+        indexRef.current.word = (word + 1) % heroTypedWords.length
         timeout = setTimeout(tick, 300)
       }
     }
+
     tick()
     return () => clearTimeout(timeout)
   }, [])
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) e.target.classList.add('is-visible')
-        })
-      },
-      { threshold: 0.1 }
-    )
-    const els = sectionRef.current?.querySelectorAll('.reveal')
-    els?.forEach((el) => observer.observe(el))
-    return () => observer.disconnect()
-  }, [])
-
   return (
-    <section className="hero-section container section" ref={sectionRef}>
-
+    <section id="home" className="hero-section container section" ref={sectionRef} aria-labelledby="hero-title">
       <div className="hero-copy reveal">
-        <h1>
-          <span className="headline-gradient">Full Stack Developer</span>
-          building AI-powered web apps.
+        <p className="section-kicker">Software Engineer | Full Stack Developer | AI Automation Developer</p>
+        <h1 id="hero-title">
+          <span className="headline-gradient">Software Engineer and Full Stack Developer</span>
+          building AI-powered web applications and scalable APIs.
         </h1>
         <p className="hero-text">
-          I build modern web applications, scalable backend APIs, and intelligent digital
-          solutions with MERN, Python, and FastAPI for real-world products.
+          I build modern products with React, Node.js, Express.js, MongoDB, Python, and FastAPI for recruiters,
+          founders, agencies, and businesses that need strong frontend execution, reliable backend systems, and
+          practical AI integration.
         </p>
 
         <div className="hero-type-row">
@@ -77,24 +59,38 @@ export default function Hero() {
         </div>
 
         <div className="hero-actions">
-          <a className="button" href="#projects">
+          <a className="button" href="/projects/">
             <i className="fa-solid fa-arrow-trend-up" />
             View Projects
           </a>
-          <a className="button button-ghost" href="#contact">
+          <a className="button button-ghost" href="/contact/">
             <i className="fa-regular fa-paper-plane" />
-            Contact Me
+            Hire Me
+          </a>
+          <a className="button button-ghost" href={siteConfig.resumePath} target="_blank" rel="noopener">
+            <i className="fa-regular fa-file-lines" />
+            Download Resume
           </a>
         </div>
 
+        <div className="hero-proof-row" aria-label="Core specialties">
+          {heroHighlights.map((item) => (
+            <span key={item} className="hero-proof-chip">
+              {item}
+            </span>
+          ))}
+        </div>
+
+        <p className="hero-note">{siteConfig.availability}</p>
+
         <div className="social-row">
-          <a href="https://github.com/eshanelahi01" target="_blank" rel="noopener" aria-label="GitHub">
+          <a href={siteConfig.github} target="_blank" rel="noopener" aria-label="Visit Eshan Elahi GitHub profile">
             <i className="fa-brands fa-github" />
           </a>
-          <a href="https://www.linkedin.com/in/eshan-elahi-3a7946357" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <a href={siteConfig.linkedin} target="_blank" rel="noopener" aria-label="Visit Eshan Elahi LinkedIn profile">
             <i className="fa-brands fa-linkedin-in" />
           </a>
-          <a href="mailto:elahieshan0@gmail.com" aria-label="Email">
+          <a href={siteConfig.emailHref} aria-label="Email Eshan Elahi">
             <i className="fa-regular fa-envelope" />
           </a>
         </div>
@@ -102,10 +98,19 @@ export default function Hero() {
 
       <div className="hero-visual reveal">
         <div className="visual-card profile-panel">
-          <img src="/images/myphoto.png?v=3" alt="Portrait of Eshan Elahi" />
+          <img
+            src={siteConfig.portraitImage}
+            srcSet="/images/myphoto-720.jpg 720w, /images/og-cover.jpg 1200w"
+            sizes="(max-width: 1024px) 70vw, 320px"
+            alt="Portrait of Eshan Elahi, software engineer and full stack developer."
+            width="720"
+            height="1280"
+            decoding="async"
+            fetchPriority="high"
+          />
           <div className="profile-summary">
-            <h2>ESHAN ELAHI</h2>
-            <p>Software Engineer</p>
+            <h2>{siteConfig.name.toUpperCase()}</h2>
+            <p>{siteConfig.fullRole}</p>
           </div>
         </div>
       </div>

@@ -1,0 +1,34 @@
+# Eshan Elahi
+
+Eshan Elahi is a software engineer and full stack developer who builds React, Node.js, Express.js, MongoDB, Python, and FastAPI products.
+
+## Specialties
+- Full stack web application development
+- MERN stack development
+- Backend API development
+- Python and FastAPI services
+- AI automation, AI agents, chatbots, and RAG-style workflows
+- Business website development
+
+## Main Projects
+- SafarBot: AI-integrated travel booking platform with voice and text booking, bilingual Urdu and English interaction, Express.js backend, FastAPI AI service, and MongoDB
+- Onyx Closings: business website focused on trust, clear messaging, and responsive frontend delivery
+- ABDANIX Solutions Website: company website focused on service clarity, credibility, and modern responsive presentation
+
+## Services
+- React and MERN web app development
+- Backend APIs and integrations
+- AI automation and AI-powered workflows
+- Business websites and digital platforms
+
+## Key Pages
+- Home: https://eshanelahi.netlify.app/
+- Projects: https://eshanelahi.netlify.app/projects/
+- SafarBot case study: https://eshanelahi.netlify.app/projects/safarbot/
+- Services: https://eshanelahi.netlify.app/services/
+- Contact: https://eshanelahi.netlify.app/contact/
+
+## Contact
+- Email: elahieshan0@gmail.com
+- LinkedIn: https://www.linkedin.com/in/eshan-elahi-3a7946357
+- GitHub: https://github.com/eshanelahi01

@@ -1,96 +1,127 @@
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
+import { siteConfig } from '../data/siteContent'
+import useReveal from '../hooks/useReveal'
 
-export default function Contact() {
-  const ref = useRef(null)
+export default function Contact({
+  standalone = false,
+  title = "Let's build something exceptional together.",
+  description = "If you're hiring, collaborating, or planning a product that needs full-stack development, scalable APIs, or AI integration, I'd be glad to connect.",
+}) {
+  const ref = useReveal({ threshold: 0.1 })
   const [formMsg, setFormMsg] = useState({ text: '', color: '' })
+  const [submitting, setSubmitting] = useState(false)
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) e.target.classList.add('is-visible')
-        })
-      },
-      { threshold: 0.1 }
-    )
-    const els = ref.current?.querySelectorAll('.reveal')
-    els?.forEach((el) => observer.observe(el))
-    return () => observer.disconnect()
-  }, [])
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    setSubmitting(true)
     setFormMsg({ text: 'Sending your message...', color: 'var(--platinum)' })
 
     try {
-      const res = await fetch('https://formspree.io/f/mdalplgl', {
+      const response = await fetch('https://formspree.io/f/mdalplgl', {
         method: 'POST',
-        body: new FormData(e.target),
+        body: new FormData(event.target),
         headers: { Accept: 'application/json' },
       })
 
-      if (!res.ok) throw new Error('Failed')
+      if (!response.ok) throw new Error('Failed')
 
-      e.target.reset()
+      event.target.reset()
       setFormMsg({ text: 'Thanks for reaching out. I will get back to you soon.', color: '#86efac' })
     } catch {
       setFormMsg({ text: 'Something went wrong. Please try again.', color: '#fca5a5' })
+    } finally {
+      setSubmitting(false)
     }
   }
 
   return (
-    <section id="contact" className="container section contact-section" ref={ref}>
+    <section id="contact" className="container section contact-section" ref={ref} aria-labelledby="contact-title">
       <div className="contact-panel reveal">
         <div className="contact-layout">
           <div className="contact-copy">
             <div className="section-head">
               <p className="section-kicker">Contact</p>
-              <h2>Let's build something exceptional together.</h2>
+              <h2 id="contact-title">{title}</h2>
             </div>
-            <p>
-              If you're hiring, collaborating, or planning a product that needs full-stack development,
-              scalable APIs, or AI integration, I'd be glad to connect.
-            </p>
+            <p>{description}</p>
+            <p className="contact-trust-note">{siteConfig.availability}</p>
+            {standalone ? (
+              <ul className="contact-helper-list">
+                <li>Full stack web applications and recruiter-facing portfolios</li>
+                <li>React, Node.js, Express.js, MongoDB, Python, and FastAPI work</li>
+                <li>Backend APIs, AI integrations, automation flows, and business websites</li>
+              </ul>
+            ) : null}
             <div className="contact-list">
-              <a href="mailto:elahieshan0@gmail.com" aria-label="Email">
+              <a href={siteConfig.emailHref} aria-label="Email Eshan Elahi">
                 <i className="fa-regular fa-envelope" />
               </a>
-              <a href="https://github.com/eshanelahi01" target="_blank" rel="noopener" aria-label="GitHub">
+              <a href={siteConfig.github} target="_blank" rel="noopener" aria-label="Visit GitHub profile">
                 <i className="fa-brands fa-github" />
               </a>
-              <a href="https://www.linkedin.com/in/eshan-elahi-3a7946357" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <a href={siteConfig.linkedin} target="_blank" rel="noopener" aria-label="Visit LinkedIn profile">
                 <i className="fa-brands fa-linkedin-in" />
               </a>
             </div>
           </div>
 
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <label>
+          <form className="contact-form" onSubmit={handleSubmit} action="https://formspree.io/f/mdalplgl" method="POST">
+            <input type="hidden" name="_subject" value="Portfolio inquiry from eshanelahi.netlify.app" />
+
+            <label htmlFor="contact-name">
               Name
-              <input type="text" name="name" placeholder="Your name" required />
+              <input id="contact-name" type="text" name="name" placeholder="Your name" autoComplete="name" required />
             </label>
-            <label>
+
+            <label htmlFor="contact-email">
               Email
-              <input type="email" name="email" placeholder="Your email" required />
+              <input
+                id="contact-email"
+                type="email"
+                name="email"
+                placeholder="Your email"
+                autoComplete="email"
+                required
+              />
             </label>
-            <label>
-              Message
-              <textarea name="message" rows="3" placeholder="Tell me about your project or opportunity" required />
+
+            <label htmlFor="contact-company">
+              Company or team
+              <input
+                id="contact-company"
+                type="text"
+                name="company"
+                placeholder="Optional"
+                autoComplete="organization"
+              />
             </label>
+
+            <label htmlFor="contact-message">
+              Project or role details
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="4"
+                placeholder="Tell me about the product, website, API, AI workflow, or hiring opportunity."
+                required
+              />
+            </label>
+
             <div className="form-actions">
-              <button className="button" type="submit">
+              <button className="button" type="submit" disabled={submitting}>
                 <i className="fa-regular fa-paper-plane" />
-                Send Message
+                {submitting ? 'Sending...' : 'Send Message'}
               </button>
-              <a className="button button-ghost" href="/files/resume.pdf" target="_blank" rel="noopener">
+              <a className="button button-ghost" href={siteConfig.resumePath} target="_blank" rel="noopener">
                 Download Resume
               </a>
             </div>
-            {formMsg.text && (
-              <div className="form-message" style={{ color: formMsg.color }} aria-live="polite">
+
+            {formMsg.text ? (
+              <div className="form-message" style={{ color: formMsg.color }} aria-live="polite" id="contact-status">
                 {formMsg.text}
               </div>
-            )}
+            ) : null}
           </form>
         </div>
       </div>

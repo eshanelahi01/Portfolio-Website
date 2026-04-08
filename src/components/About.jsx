@@ -1,66 +1,54 @@
-import { useEffect, useRef } from 'react'
+import { professionalSummary } from '../data/siteContent'
+import useReveal from '../hooks/useReveal'
 
 export default function About() {
-  const ref = useRef(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) e.target.classList.add('is-visible')
-        })
-      },
-      { threshold: 0.12 }
-    )
-    const els = ref.current?.querySelectorAll('.reveal')
-    els?.forEach((el) => observer.observe(el))
-    return () => observer.disconnect()
-  }, [])
+  const ref = useReveal({ threshold: 0.12 })
 
   return (
-    <section id="about" className="container section" ref={ref}>
+    <section id="summary" className="container section" ref={ref} aria-labelledby="summary-title">
       <div className="section-head reveal">
-        <p className="section-kicker">About</p>
-        <h2>
-          Building modern web products with strong engineering foundations and practical AI features.
-        </h2>
+        <p className="section-kicker">{professionalSummary.title}</p>
+        <h2 id="summary-title">A clear, recruiter-friendly summary of who I am, what I build, and where I add value.</h2>
       </div>
 
       <div className="about-grid">
         <div className="about-content">
           <article className="glass-card reveal">
-            <p>
-              I am Eshan Elahi, a Software Engineer and Full Stack Developer focused on building modern web applications
-              with MERN stack, Python, and FastAPI. I create responsive frontend interfaces, scalable backend systems,
-              and AI-powered features for real-world digital products.
-            </p>
-            <p>
-              My goal is to build products that are technically strong, user-friendly, and business-focused. Whether it
-              is a custom website, admin dashboard, REST API, or AI-enhanced platform, I enjoy turning ideas into
-              practical working solutions.
-            </p>
+            <p>{professionalSummary.intro}</p>
+            {professionalSummary.body.map((item) => (
+              <p key={item}>{item}</p>
+            ))}
+            <ul className="summary-list" aria-label="Professional summary highlights">
+              {professionalSummary.summaryList.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </article>
 
           <aside className="facts-card reveal">
-            <div className="fact-item">
-              <span className="fact-label">Location</span>
-              <strong>Pakistan</strong>
-            </div>
-            <div className="fact-item">
-              <span className="fact-label">University</span>
-              <strong>PMAS UAAR Rawalpindi</strong>
-            </div>
-            <div className="fact-item">
-              <span className="fact-label">Current role</span>
-              <strong>Junior Software Engineer</strong>
-            </div>
-            <div className="fact-item">
-              <span className="fact-label">Focus</span>
-              <strong>Full Stack Web Apps with AI</strong>
-            </div>
+            {professionalSummary.facts.map((item) => (
+              <div key={item.label} className="fact-item">
+                <span className="fact-label">{item.label}</span>
+                <strong>{item.value}</strong>
+              </div>
+            ))}
           </aside>
         </div>
 
+        <div className="capability-grid about-signal-grid">
+          {professionalSummary.signals.map((item, index) => (
+            <article key={item.title} className={`capability-card reveal reveal-delay-${index + 1}`}>
+              <span className="capability-index">{item.title}</span>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+              <div className="capability-tags">
+                {item.tags.map((tag) => (
+                  <span key={tag}>{tag}</span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   )

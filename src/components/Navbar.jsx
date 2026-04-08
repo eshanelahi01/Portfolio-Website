@@ -1,9 +1,13 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { siteConfig } from '../data/siteContent'
+import { isHomePath, normalizePath } from '../lib/pathname'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('')
+  const pathname = typeof window !== 'undefined' ? normalizePath(window.location.pathname) : '/'
+  const onHomePage = isHomePath(pathname)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40)
@@ -13,7 +17,12 @@ export default function Navbar() {
   }, [])
 
   useEffect(() => {
-    const sections = ['about', 'work', 'projects', 'experience', 'contact']
+    if (!onHomePage) {
+      setActiveSection('')
+      return undefined
+    }
+
+    const sections = ['summary', 'expertise', 'projects', 'faq', 'contact']
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -22,16 +31,16 @@ export default function Navbar() {
           }
         })
       },
-      { rootMargin: '-35% 0px -50% 0px', threshold: 0.05 }
+      { rootMargin: '-35% 0px -45% 0px', threshold: 0.08 }
     )
 
     sections.forEach((id) => {
-      const el = document.getElementById(id)
-      if (el) observer.observe(el)
+      const element = document.getElementById(id)
+      if (element) observer.observe(element)
     })
 
     return () => observer.disconnect()
-  }, [])
+  }, [onHomePage])
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? 'hidden' : ''
@@ -58,47 +67,58 @@ export default function Navbar() {
     }
   }, [])
 
-  const navItems = [
-    { href: '#about', label: 'About' },
-    { href: '#work', label: 'Work' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#experience', label: 'Experience' },
-    { href: '#contact', label: 'Contact' },
-  ]
+  const navItems = useMemo(
+    () => [
+      { href: '/#summary', label: 'About', section: 'summary', route: '/' },
+      { href: '/#expertise', label: 'Expertise', section: 'expertise', route: '/' },
+      { href: '/services/', label: 'Services', route: '/services/' },
+      { href: '/projects/', label: 'Projects', route: '/projects/' },
+      { href: '/contact/', label: 'Contact', route: '/contact/' },
+    ],
+    []
+  )
 
   const handleNavClick = () => setMobileOpen(false)
+
+  const isActive = (item) => {
+    if (item.route !== '/' && pathname.startsWith(item.route)) return true
+    if (onHomePage && item.section) return activeSection === item.section
+    return pathname === item.route && !item.section
+  }
 
   return (
     <>
       <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
         <div className="container nav-wrap">
-          <a className="brand" href="#home" aria-label="Go to top">
+          <a className="brand" href="/" aria-label="Go to homepage">
             <span className="brand-mark">
-              <img src="/images/myhero.png?v=2" alt="Eshan Elahi" />
+              <img src={siteConfig.brandImage} alt="Eshan Elahi brand mark" width="528" height="560" />
             </span>
             <span className="brand-copy">
-              <strong>Eshan Elahi</strong>
-              <small>Software Engineer</small>
+              <strong>{siteConfig.name}</strong>
+              <small>{siteConfig.role}</small>
             </span>
           </a>
 
           <nav className="main-nav" aria-label="Primary navigation">
-            {navItems.map(({ href, label }) => (
+            {navItems.map((item) => (
               <a
-                key={href}
-                href={href}
-                className={activeSection === href.slice(1) ? 'is-active' : ''}
+                key={item.href}
+                href={item.href}
+                className={isActive(item) ? 'is-active' : ''}
+                aria-current={isActive(item) ? 'page' : undefined}
               >
-                {label}
+                {item.label}
               </a>
             ))}
           </nav>
 
           <a
             className="button button-ghost button-nav desktop-only"
-            href="/files/resume.pdf"
+            href={siteConfig.resumePath}
             target="_blank"
             rel="noopener"
+            aria-label="Download Eshan Elahi resume in PDF format"
           >
             Resume
           </a>
@@ -115,16 +135,16 @@ export default function Navbar() {
         </div>
       </header>
 
-      <div id="mobile-nav" className={`mobile-nav ${mobileOpen ? 'is-open' : ''}`}>
+      <div id="mobile-nav" className={`mobile-nav ${mobileOpen ? 'is-open' : ''}`} aria-hidden={!mobileOpen}>
         <button className="mobile-nav-close" onClick={() => setMobileOpen(false)} aria-label="Close menu">
           <i className="fa-solid fa-xmark" />
         </button>
-        {navItems.map(({ href, label }) => (
-          <a key={href} href={href} onClick={handleNavClick}>
-            {label}
+        {navItems.map((item) => (
+          <a key={item.href} href={item.href} onClick={handleNavClick}>
+            {item.label}
           </a>
         ))}
-        <a className="button" href="/files/resume.pdf" target="_blank" rel="noopener" onClick={handleNavClick}>
+        <a className="button" href={siteConfig.resumePath} target="_blank" rel="noopener" onClick={handleNavClick}>
           Resume
         </a>
       </div>
