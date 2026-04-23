@@ -22,7 +22,7 @@ export default function ContactPage() {
           <div className="page-hero-copy reveal">
             <p className="section-kicker">Contact</p>
             <h1 id="contact-page-title">
-              Hire Eshan Elahi for software engineering, full stack development, backend APIs, and AI-powered web
+              Hire Eshan Elahi for full stack MERN development, backend APIs, and AI-powered web
               product work.
             </h1>
             <p className="page-hero-text">
@@ -50,4 +50,3 @@ export default function ContactPage() {
     </div>
   )
 }
-

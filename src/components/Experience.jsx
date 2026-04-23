@@ -7,18 +7,38 @@ export default function Experience() {
   return (
     <section id="experience" className="container section" ref={ref} aria-labelledby="experience-title">
       <div className="section-head reveal">
-        <p className="section-kicker">Experience</p>
-        <h2 id="experience-title">Academic and professional milestones shaping a stronger foundation in software engineering.</h2>
+        <p className="section-kicker">Employment History</p>
+        <h2 id="experience-title">Full-stack roles focused on shipping client products, stronger systems, and production-ready delivery.</h2>
       </div>
 
       <div className="timeline">
         {experienceTimeline.map((item, index) => (
-          <article key={item.title} className={`timeline-item reveal reveal-delay-${(index % 4) + 1}`}>
+          <article
+            key={`${item.company}-${item.role}-${item.date}`}
+            className={`timeline-item reveal reveal-delay-${(index % 4) + 1}`}
+          >
             <div className="timeline-dot" />
             <div className="timeline-card">
               <span className="timeline-date">{item.date}</span>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              <div className="timeline-head">
+                <h3>{item.role}</h3>
+                <p className="timeline-company">{item.company}</p>
+              </div>
+
+              <div className="timeline-copy">
+                {item.summary.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+
+              <div className="timeline-highlights">
+                <span className="timeline-label">Key work</span>
+                <ul>
+                  {item.highlights.map((highlight) => (
+                    <li key={highlight}>{highlight}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </article>
         ))}

@@ -24,7 +24,7 @@ export default function ServicesPage() {
           <div className="page-hero-copy reveal">
             <p className="section-kicker">Services</p>
             <h1 id="services-page-title">
-              Full stack software development, backend API work, and AI automation services built around real product
+              Full stack MERN development, backend API work, and AI automation services built around real product
               needs.
             </h1>
             <p className="page-hero-text">
@@ -36,7 +36,7 @@ export default function ServicesPage() {
           <div className="page-hero-card reveal">
             <h2>Good fit for</h2>
             <ul className="detail-list">
-              <li>Recruiters hiring for software engineering, MERN, React, or backend roles</li>
+              <li>Recruiters hiring for full stack MERN, React, or backend roles</li>
               <li>Founders who need a product MVP, admin dashboard, or customer-facing web app</li>
               <li>Agencies and businesses looking for AI automation or website development support</li>
             </ul>
@@ -48,10 +48,9 @@ export default function ServicesPage() {
       <WhyWorkWithMe />
       <Contact
         standalone
-        title="Start a conversation about your product, service, or engineering need."
+        title="Start a conversation about your product, service, or development need."
         description="Share the kind of product, website, API, or AI workflow you need. I can review the scope and help you move toward the next practical step."
       />
     </div>
   )
 }
-

@@ -1,4 +1,3 @@
-import BackgroundGlow from './BackgroundGlow'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import ParticleCanvas from './ParticleCanvas'
@@ -11,7 +10,6 @@ export default function PageShell({ children, showParticles = true }) {
       </a>
       <div className="noise-overlay" />
       <div className="grid-overlay" />
-      <BackgroundGlow />
       {showParticles ? <ParticleCanvas /> : null}
       <Navbar />
       <main id="main-content">{children}</main>
@@ -19,4 +17,3 @@ export default function PageShell({ children, showParticles = true }) {
     </>
   )
 }
-

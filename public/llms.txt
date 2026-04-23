@@ -1,6 +1,6 @@
 # Eshan Elahi
 
-Eshan Elahi is a software engineer and full stack developer who builds React, Node.js, Express.js, MongoDB, Python, and FastAPI products.
+Eshan Elahi is a full stack MERN developer who builds React, Node.js, Express.js, MongoDB, Python, and FastAPI products.
 
 ## Specialties
 - Full stack web application development

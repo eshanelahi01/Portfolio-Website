@@ -1,5 +1,4 @@
 import {
-  faqItems,
   featuredProjects,
   knowsAbout,
   projectFooterLinks,
@@ -96,21 +95,6 @@ export function getBreadcrumbSchema(items) {
   }
 }
 
-export function getFAQSchema(items = faqItems) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: items.map((item) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer,
-      },
-    })),
-  }
-}
-
 export function getItemListSchema({ name, path, items }) {
   return {
     '@context': 'https://schema.org',
@@ -131,7 +115,7 @@ export function getHomeSchemas() {
     getPersonSchema(),
     getWebSiteSchema(),
     getWebPageSchema({
-      title: `${siteConfig.name} | Software Engineer, Full Stack Developer, and AI Automation Developer`,
+      title: `${siteConfig.name} | ${siteConfig.role}`,
       description: siteConfig.description,
       path: '/',
     }),
@@ -140,7 +124,6 @@ export function getHomeSchemas() {
       path: '/',
       items: featuredProjects,
     }),
-    getFAQSchema(),
   ]
 }
 
@@ -168,7 +151,7 @@ export function getServicesPageSchemas() {
     getWebPageSchema({
       title: `Services | ${siteConfig.name}`,
       description:
-        'Software development services from Eshan Elahi including full stack web apps, MERN development, backend APIs, FastAPI services, and AI automation workflows.',
+        'Full stack MERN development services from Eshan Elahi including web apps, backend APIs, FastAPI services, and AI automation workflows.',
       path: '/services/',
     }),
     getItemListSchema({
@@ -185,7 +168,7 @@ export function getContactPageSchemas() {
     getWebPageSchema({
       title: `Contact ${siteConfig.name}`,
       description:
-        'Contact Eshan Elahi for software engineering roles, freelance projects, full stack development, backend APIs, React development, and AI-powered web product work.',
+        'Contact Eshan Elahi for full stack MERN roles, freelance projects, backend APIs, React development, and AI-powered web product work.',
       path: '/contact/',
       type: 'ContactPage',
     }),
@@ -227,4 +210,3 @@ export function getFooterProjectSchemas() {
     items: projectFooterLinks,
   })
 }
-

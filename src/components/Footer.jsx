@@ -7,10 +7,10 @@ export default function Footer() {
         <div className="footer-brand-block">
           <h3>{siteConfig.name}</h3>
           <p>
-            {siteConfig.name} is a software engineer and full stack developer specializing in React, Node.js,
+            {siteConfig.name} is a full stack MERN developer specializing in React, Node.js,
             Express.js, MongoDB, Python, FastAPI, REST APIs, AI automation, AI agents, and AI-powered web applications.
           </p>
-          <p>{siteConfig.availability}</p>
+          {siteConfig.availability ? <p>{siteConfig.availability}</p> : null}
         </div>
 
         <div className="footer-links-block">

@@ -5,12 +5,9 @@ export default function CoreExpertise() {
   const ref = useReveal({ threshold: 0.08 })
 
   return (
-    <section id="expertise" className="container section" ref={ref} aria-labelledby="expertise-title">
+    <section id="expertise" className="container section" ref={ref} aria-label="Core Expertise">
       <div className="section-head reveal">
         <p className="section-kicker">Core Expertise</p>
-        <h2 id="expertise-title">
-          Software engineering strengths across full stack development, backend APIs, and AI-powered product work.
-        </h2>
       </div>
 
       <div className="capability-grid">
@@ -30,4 +27,3 @@ export default function CoreExpertise() {
     </section>
   )
 }
-

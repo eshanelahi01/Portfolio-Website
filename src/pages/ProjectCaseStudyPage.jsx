@@ -1,6 +1,5 @@
 import Breadcrumbs from '../components/Breadcrumbs'
 import SchemaMarkup from '../components/SchemaMarkup'
-import { siteConfig } from '../data/siteContent'
 import useReveal from '../hooks/useReveal'
 import { getBreadcrumbSchema, getProjectPageSchemas } from '../lib/schema'
 
@@ -24,10 +23,12 @@ export default function ProjectCaseStudyPage({ project }) {
             <h1 id={`${project.slug}-title`}>{project.title}</h1>
             <p className="page-hero-text">{project.summary}</p>
             <div className="hero-actions page-actions">
-              <a className="button" href={project.liveUrl} target="_blank" rel="noopener">
-                Visit Live Project
-              </a>
-              <a className="button button-ghost" href="/contact/">
+              {project.liveUrl ? (
+                <a className="button" href={project.liveUrl} target="_blank" rel="noopener">
+                  Visit Live Project
+                </a>
+              ) : null}
+              <a className={`button${project.liveUrl ? ' button-ghost' : ''}`} href="/contact/">
                 Start a Similar Project
               </a>
             </div>
@@ -132,9 +133,6 @@ export default function ProjectCaseStudyPage({ project }) {
             <div className="project-actions project-actions-inline">
               <a className="button" href="/contact/">
                 Hire Me
-              </a>
-              <a className="button button-ghost" href={siteConfig.resumePath} target="_blank" rel="noopener">
-                Download Resume
               </a>
             </div>
           </article>

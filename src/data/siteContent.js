@@ -2,15 +2,14 @@ export const siteConfig = {
   name: 'Eshan Elahi',
   firstName: 'Eshan',
   siteName: 'Eshan Elahi Portfolio',
-  role: 'Software Engineer',
-  fullRole: 'Software Engineer and Full Stack Developer',
-  headline: 'Software Engineer and MERN Stack Developer building AI-powered web applications and scalable APIs.',
+  role: 'Full Stack Developer',
+  fullRole: 'Full Stack Developer',
+  headline: 'Full Stack Developer building AI-powered web applications and scalable APIs.',
   siteUrl: 'https://eshanelahi.netlify.app',
   email: 'elahieshan0@gmail.com',
   emailHref: 'mailto:elahieshan0@gmail.com',
   github: 'https://github.com/eshanelahi01',
   linkedin: 'https://www.linkedin.com/in/eshan-elahi-3a7946357',
-  resumePath: '/files/resume.pdf',
   company: 'ABDANIX Solutions',
   university: 'PMAS Arid Agriculture University, Rawalpindi',
   location: 'Pakistan',
@@ -18,9 +17,8 @@ export const siteConfig = {
   portraitImage: '/images/myphoto-720.jpg',
   brandImage: '/images/myhero.png',
   description:
-    'Software Engineer specializing in MERN stack and AI automation. Building scalable web apps using React, Node.js, MongoDB, and FastAPI.',
-  availability:
-    'Open to software engineering roles, freelance projects, agency collaboration, and product-focused development work.',
+    'Full Stack Developer specializing in MERN and AI-powered web development. Building scalable web apps and APIs with FastAPI.',
+  availability: '',
 }
 
 export const heroTypedWords = [
@@ -32,51 +30,46 @@ export const heroTypedWords = [
   'Business Website Builds',
 ]
 
-export const heroHighlights = [
-  'React, Node.js, Express.js, and MongoDB development',
-  'Python, FastAPI, REST APIs, and backend systems',
-  'AI automation, AI agents, RAG workflows, and chatbots',
-]
-
 export const professionalSummary = {
   title: 'Professional Summary',
   intro:
-    'I am Eshan Elahi, a software engineer and full stack developer focused on building modern web applications, backend APIs, and practical AI-powered products.',
+    'I am Eshan, a Full-Stack MERN Developer with 3+ years of experience building scalable web applications for startups, SaaS companies, and growing businesses.',
   body: [
-    'My work spans React interfaces, Node.js and Express.js backends, MongoDB data models, Python services, and FastAPI APIs. I enjoy building systems that are technically strong, easy to use, and aligned with real product goals.',
-    'I especially like projects that combine polished frontend experiences with scalable backend logic, AI integrations, automation workflows, chatbots, and business-focused delivery for recruiters, founders, agencies, and service companies.',
+    'I specialize in SaaS MVP development, custom web applications, CRM and admin dashboards, e-commerce platforms, REST and GraphQL APIs, and responsive Figma-to-React interfaces.',
+    'Clients work with me because I can own the full product flow across frontend, backend, database design, integrations, and deployment while keeping the code clean, scalable, documented, and maintainable.',
+    'I bring product thinking into the work by spotting UX issues, edge cases, and logic gaps early, communicating proactively, and adapting quickly to new or existing codebases.',
   ],
   facts: [
     { label: 'Location', value: 'Pakistan' },
-    { label: 'Current role', value: 'Software Engineer at ABDANIX Solutions' },
-    { label: 'Education', value: 'BS Software Engineering, PMAS UAAR Rawalpindi' },
-    { label: 'Focus', value: 'Full stack products, APIs, and AI-powered web apps' },
+    { label: 'Experience', value: '3+ years building MERN applications' },
+    { label: 'Availability', value: 'Full-time contract work and long-term engagements' },
+    { label: 'Focus', value: 'SaaS MVPs, dashboards, web apps, APIs, and AI-powered products' },
   ],
   signals: [
     {
       title: 'What I Build',
       description:
-        'Web applications, internal tools, business websites, backend APIs, AI-powered workflows, and chatbot-enabled product experiences.',
-      tags: ['Full Stack Development', 'AI Web Apps', 'Backend APIs', 'Business Websites'],
+        'SaaS platforms, MVPs, CRM systems, admin dashboards, e-commerce products, backend APIs, and responsive React interfaces.',
+      tags: ['SaaS MVPs', 'Admin Dashboards', 'CRM Systems', 'E-Commerce'],
     },
     {
       title: 'Core Stack',
       description:
-        'React, JavaScript, Node.js, Express.js, MongoDB, Python, FastAPI, REST APIs, frontend architecture, and API integrations.',
-      tags: ['React', 'Node.js', 'MongoDB', 'Python', 'FastAPI', 'REST APIs'],
+        'React.js, Next.js, TypeScript, Redux, Tailwind CSS, Node.js, Express.js, MongoDB, PostgreSQL, REST APIs, GraphQL, JWT, OAuth 2.0, Stripe, AWS, Vercel, Render, Docker, and CI/CD pipelines.',
+      tags: ['React.js', 'Node.js', 'MongoDB', 'GraphQL', 'Stripe', 'AWS'],
     },
     {
-      title: 'Use Cases',
+      title: 'How I Work',
       description:
-        'Travel and booking flows, service business websites, product-facing web apps, workflow automation, AI assistant features, and recruiter-ready portfolio systems.',
-      tags: ['Travel Tech', 'Automation', 'Chatbots', 'B2B Websites'],
+        'I handle full-stack ownership, write maintainable code, communicate early, and help turn rough requirements into reliable product features.',
+      tags: ['Full Ownership', 'Clean Code', 'Product Thinking', 'Fast Onboarding'],
     },
   ],
   summaryList: [
-    'Role: Software Engineer, Software Developer, and Full Stack Developer',
-    'Specializes in: MERN stack development, backend APIs, Python and FastAPI services, and AI automation',
-    'Builds: React frontends, Node.js systems, MongoDB-backed applications, chatbots, and AI-powered web products',
-    'Works with: recruiters, founders, agencies, and businesses that need polished delivery and practical engineering',
+    'Builds: SaaS platforms, custom web applications, admin dashboards, CRM panels, e-commerce systems, and backend APIs',
+    'Specializes in: React.js, Node.js, Express.js, MongoDB, Next.js, TypeScript, Tailwind CSS, Stripe, JWT, OAuth, WebSockets, and cloud deployment',
+    'Has shipped: real-time SaaS dashboards, restaurant ordering platforms, insurance data integrations, AI-powered SaaS MVPs, and real estate CRM systems',
+    'Best fit for: startups, SaaS teams, agencies, and businesses that need one developer to own delivery from planning to deployment',
   ],
 }
 
@@ -107,7 +100,7 @@ export const expertiseAreas = [
     title: 'Business-Focused Product Delivery',
     description:
       'I care about clarity, speed, and usability, so the work does not stop at writing code. I structure pages and systems so they are easier to understand, easier to trust, and easier to act on.',
-    tags: ['Software Engineer', 'Software Developer', 'Conversion-Focused UX', 'Technical SEO'],
+    tags: ['Full Stack Developer', 'Software Developer', 'Conversion-Focused UX', 'Technical SEO'],
   },
 ]
 
@@ -173,70 +166,297 @@ export const whyWorkWithMe = [
   },
 ]
 
-export const proficiency = [
-  {
-    name: 'React.js',
-    level: 92,
-    accent: 'linear-gradient(90deg, #62cfff 0%, #3d7df5 100%)',
-  },
-  {
-    name: 'Python',
-    level: 89,
-    accent: 'linear-gradient(90deg, #f2cd6b 0%, #d89f22 100%)',
-  },
-  {
-    name: 'Node.js',
-    level: 88,
-    accent: 'linear-gradient(90deg, #77dd8a 0%, #2ea95a 100%)',
-  },
-  {
-    name: 'FastAPI',
-    level: 86,
-    accent: 'linear-gradient(90deg, #4be0cb 0%, #1e9f90 100%)',
-  },
-  {
-    name: 'AI Automation',
-    level: 84,
-    accent: 'linear-gradient(90deg, #ff9f5a 0%, #f05a28 100%)',
-  },
-]
-
 export const techCategories = [
   {
     title: 'Frontend Development',
-    tags: ['React.js', 'JavaScript', 'Responsive UI', 'Component Systems', 'Frontend Architecture', 'API Integration'],
+    icon: 'fa-solid fa-code',
+    tags: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Responsive Web Design', 'JavaScript'],
   },
   {
-    title: 'Backend and API Engineering',
-    tags: ['Node.js', 'Express.js', 'FastAPI', 'REST APIs', 'MongoDB', 'Authentication', 'System Design'],
+    title: 'Backend and APIs',
+    icon: 'fa-solid fa-server',
+    tags: ['Node.js', 'Express.js', 'REST APIs', 'JWT', 'OAuth 2.0', 'WebSockets'],
   },
   {
-    title: 'AI and Automation',
-    tags: ['AI Agents', 'RAG Systems', 'Workflow Automation', 'LLM Integration', 'Chatbots', 'Prompt-Oriented UX'],
+    title: 'Database and Data',
+    icon: 'fa-solid fa-database',
+    tags: ['MongoDB', 'PostgreSQL', 'Supabase', 'Database Design', 'Analytics', 'Data Management'],
+  },
+  {
+    title: 'DevOps and Integrations',
+    icon: 'fa-solid fa-cloud-arrow-up',
+    tags: ['Docker', 'AWS', 'Vercel', 'Render', 'GitHub Actions', 'Stripe'],
   },
 ]
 
 export const experienceTimeline = [
   {
-    date: 'Oct 2022 - Present',
-    title: 'BS Software Engineering',
-    description: 'PMAS Arid Agriculture University, Rawalpindi.',
+    date: 'January 2025 - Present',
+    role: 'Full Stack Developer',
+    company: 'Abdanix Solutions',
+    summary: [
+      'Built and shipped multiple production MERN applications for business clients, including a CRM platform with role-based access control, a real-time analytics dashboard delivering live data via WebSockets, and an admin panel with automated reporting and user management.',
+      'Owned the complete development lifecycle from MongoDB schema design and Express.js API architecture through AWS and Vercel deployment, with CI/CD pipeline setup handled through GitHub Actions.',
+    ],
+    highlights: [
+      'Designed and built RESTful and GraphQL APIs consumed by React frontends.',
+      'Implemented JWT and OAuth 2.0 authentication with refresh token rotation.',
+      'Optimized MongoDB queries and added caching to reduce API response times.',
+      'Converted Figma designs into fully responsive React and Tailwind components.',
+      'Managed cloud deployments on Render and Vercel for multiple client apps.',
+    ],
   },
   {
-    date: 'Apr 2025 - Jul 2025',
-    title: 'Full Stack Developer Intern at ABDANIX Solutions',
-    description:
-      'Contributed to frontend and backend development, supported responsive product experiences, and helped ship features for production-focused web projects.',
-  },
-  {
-    date: 'Jul 2025 - Present',
-    title: 'Software Engineer at ABDANIX Solutions',
-    description:
-      'Working on full-stack product development, backend APIs, business websites, and AI-integrated features for real-world digital products.',
+    date: 'March 2023 - December 2024',
+    role: 'Web Developer',
+    company: 'True Tech Solutions',
+    summary: [
+      'Worked across 6+ client projects designing, developing, and maintaining MERN stack web applications ranging from business portals to e-commerce platforms.',
+      'Contributed across the full stack with React and Next.js frontends, Node.js and Express backends, MongoDB databases, and REST API integrations while handling bug fixes, feature additions, and performance improvements throughout each project.',
+    ],
+    highlights: [
+      'Built responsive, cross-browser React interfaces from Figma and wireframe specs.',
+      'Developed and maintained RESTful APIs with proper error handling and validation.',
+      'Integrated third-party services including payment gateways and email providers.',
+      'Participated in code reviews and adopted clean code practices across the team.',
+      'Built strong experience with Git workflows, agile sprints, and client handoffs.',
+    ],
   },
 ]
 
 export const projects = [
+  {
+    slug: 'dynaboard',
+    name: 'Dynaboard',
+    title: 'Dynaboard MERN Stack Admin Dashboard with Real-Time Data & Analytics',
+    category: 'Admin Dashboard Platform',
+    summary:
+      'A powerful admin dashboard for Dynaboard, a low-code web app builder platform used by developers worldwide, with real-time data, analytics, user management, and role-based controls.',
+    teaser:
+      'Built as a MERN stack admin dashboard with real-time tables and charts, user management, role-based access control, analytics, REST API integration, and responsive UI.',
+    problem:
+      'Dynaboard needed a scalable admin dashboard experience that could support developer-facing workflows, real-time data visibility, user controls, analytics, and flexible low-code interface patterns.',
+    solution:
+      'I developed the React dashboard frontend with real-time data tables and charts, user management, role-based access control, analytics and reporting, REST API integration, PostgreSQL and MongoDB connections, drag-and-drop UI components, responsive layouts, and performance optimization.',
+    role: 'React Developer & Dashboard Specialist',
+    stack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'PostgreSQL', 'Tailwind CSS', 'REST API'],
+    features: [
+      'React frontend development',
+      'Real-time data tables and charts',
+      'User management system',
+      'Role-based access control',
+      'Analytics and reporting dashboard',
+      'REST API integration',
+      'PostgreSQL and MongoDB connection',
+      'Drag-and-drop UI components',
+      'Mobile-responsive layout',
+      'Performance optimization',
+    ],
+    outcomes: [
+      'Delivered a developer-focused admin dashboard with real-time visibility and strong data-management workflows.',
+      'Improved platform control through user management, permissions, analytics, and reporting features.',
+      'Connected REST APIs, database-backed data, and responsive React UI into a scalable dashboard experience.',
+    ],
+    proof: ['React Dashboard', 'MERN Stack', 'REST API Integration'],
+    image: '/images/dynaboard.png',
+    imageAlt: 'Dynaboard admin dashboard interface with real-time data and analytics panels.',
+    liveUrl: 'https://dynaboard.com/',
+    caseStudy: true,
+    featured: true,
+    socialImage: '/images/dynaboard.png',
+    keywords: [
+      'Dynaboard admin dashboard',
+      'MERN stack dashboard',
+      'React dashboard developer',
+      'real-time analytics dashboard',
+      'REST API dashboard integration',
+    ],
+  },
+  {
+    slug: 'freight-insurance-data',
+    name: 'Freight Insurance Data',
+    title: 'Freight Insurance Data API Integration & Transportation Insurance SaaS',
+    category: 'Transportation Insurance SaaS',
+    summary:
+      'A complete SaaS platform for Freight Insurance Data, a transportation insurance software company, with carrier data integrations, CRM workflows, subscriptions, and analytics.',
+    teaser:
+      'Built as a transportation insurance SaaS with REST API integrations, USDOT and motor carrier data, CRM lead management, analytics, billing, and a responsive product experience.',
+    problem:
+      'The company needed a centralized SaaS platform to connect transportation insurance data, motor carrier insights, lead workflows, tracking features, and billing into one business-ready system.',
+    solution:
+      'I developed a full-stack platform with REST API development, USDOT and motor carrier data integration, CRM and leads database workflows, Chameleon carrier tracking, deep-dive analytics, JWT authentication, Stripe subscriptions, and responsive UI implementation.',
+    role: 'Full Stack Developer & API Integration Specialist',
+    stack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'REST API', 'JWT', 'Stripe', 'CSS'],
+    features: [
+      'REST API development and third-party API integration',
+      'USDOT and motor carrier data integration',
+      'CRM and leads database system',
+      'Chameleon carrier tracking feature',
+      'Deep-dive analytics dashboard',
+      'B2B marketing tools integration',
+      'User authentication with JWT',
+      'Subscription and billing system',
+      'Mobile-responsive UI/UX design',
+      'Performance optimization',
+    ],
+    outcomes: [
+      'Delivered a transportation insurance SaaS platform with connected data workflows and business-facing dashboards.',
+      'Improved lead, carrier, and analytics management through a centralized CRM-style product experience.',
+      'Integrated authentication, subscriptions, and data APIs into a scalable full-stack architecture.',
+    ],
+    proof: ['API Integration', 'SaaS Development', 'Transportation Insurance'],
+    image: '/images/freight.png',
+    imageAlt: 'Freight Insurance Data SaaS interface showing transportation insurance dashboard features.',
+    liveUrl: 'https://frieight.vercel.app/',
+    caseStudy: true,
+    featured: true,
+    socialImage: '/images/freight.png',
+    keywords: [
+      'freight insurance data SaaS',
+      'transportation insurance software',
+      'REST API integration project',
+      'USDOT motor carrier data integration',
+      'full stack SaaS developer',
+    ],
+  },
+  {
+    slug: 'highglamp',
+    name: 'HighGlamp',
+    title: 'HighGlamp Luxury Glamping & Camping Booking Website with React',
+    category: 'Luxury Booking Website',
+    summary:
+      'A premium booking website for HighGlamp, a luxury glamping and camping experience platform with property listings, search, reservations, and inquiry flows.',
+    teaser:
+      'Designed and developed a luxury-focused React booking experience with reservation flows, property listings, search and filters, animations, Google Maps, and mobile-responsive UI.',
+    problem:
+      'HighGlamp needed a premium digital experience that could present luxury camping properties clearly and make browsing, filtering, booking, and inquiries feel polished across devices.',
+    solution:
+      'I built the React frontend with a custom booking and reservation system, luxury-focused UI/UX design, property listing pages, search and filter functionality, custom animations, contact forms, Google Maps integration, and performance optimization.',
+    role: 'React Developer & UI/UX Designer',
+    stack: ['React', 'JavaScript', 'Tailwind CSS', 'CSS Animations', 'Google Maps API'],
+    features: [
+      'React frontend development',
+      'Custom booking and reservation system',
+      'Luxury-focused UI/UX design',
+      'Property listing pages',
+      'Search and filter functionality',
+      'Mobile-responsive layout',
+      'Custom animations and transitions',
+      'Contact and inquiry forms',
+      'Google Maps integration',
+      'Performance optimization',
+    ],
+    outcomes: [
+      'Created a premium booking experience aligned with a luxury glamping and camping brand.',
+      'Made property discovery, inquiry, and reservation flows smoother across desktop and mobile.',
+      'Combined polished UI design, responsive frontend development, maps, and booking interactions into one cohesive website.',
+    ],
+    proof: ['React Development', 'Booking Website', 'UX/UI Design'],
+    image: '/images/highglamp.png',
+    imageAlt: 'HighGlamp luxury glamping booking website with premium property browsing interface.',
+    liveUrl: 'https://highglamp.com',
+    caseStudy: true,
+    featured: true,
+    socialImage: '/images/highglamp.png',
+    keywords: [
+      'HighGlamp booking website',
+      'luxury glamping website',
+      'React booking website',
+      'Tailwind CSS developer',
+      'Google Maps API integration',
+    ],
+  },
+  {
+    slug: 'online-ordering-restaurant',
+    name: 'Online Ordering',
+    title: 'Online Ordering & Restaurant Stripe Payments & Analytics Dashboard',
+    category: 'Restaurant Ordering Platform',
+    summary:
+      'A complete online ordering and restaurant management system with Stripe payments, real-time order management, admin dashboards, analytics, and sales reporting.',
+    teaser:
+      'Built as a full-stack MERN restaurant platform with Stripe payments, real-time orders, menu management, customer authentication, analytics, and a mobile-responsive ordering experience.',
+    problem:
+      'The restaurant needed a complete online ordering system that could handle payments, menu management, real-time orders, admin operations, and sales visibility from one platform.',
+    solution:
+      'I built a MERN stack platform with Stripe payment integration, real-time order management, restaurant admin dashboard, analytics and sales reporting, menu and category management, JWT authentication, REST APIs, and MongoDB database architecture.',
+    role: 'Full Stack MERN Developer',
+    stack: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Stripe', 'JWT', 'CSS'],
+    features: [
+      'Full MERN stack development',
+      'Stripe payment integration',
+      'Real-time order management',
+      'Restaurant admin dashboard',
+      'Analytics and sales reporting',
+      'Menu and category management',
+      'Customer authentication with JWT',
+      'Mobile-responsive UI/UX design',
+      'REST API development',
+      'MongoDB database architecture',
+    ],
+    outcomes: [
+      'Delivered a complete restaurant ordering and management workflow from customer checkout to admin analytics.',
+      'Connected payments, orders, menus, authentication, and reporting into a scalable MERN architecture.',
+      'Improved operational visibility with analytics and sales reporting for restaurant management.',
+    ],
+    proof: ['MERN Stack', 'Stripe Payments', 'Restaurant Analytics'],
+    image: '/images/online.png',
+    imageAlt: 'Online ordering restaurant management dashboard with Stripe payments and analytics.',
+    liveUrl: 'https://bellofos.com',
+    caseStudy: true,
+    featured: true,
+    socialImage: '/images/online.png',
+    keywords: [
+      'online restaurant ordering platform',
+      'MERN restaurant management system',
+      'Stripe payment integration',
+      'restaurant analytics dashboard',
+      'full stack MERN developer',
+    ],
+  },
+  {
+    slug: 'softgen-ai',
+    name: 'Softgen.ai',
+    title: 'Softgen.ai AI-Powered SaaS MVP',
+    category: 'AI-Powered SaaS MVP',
+    summary:
+      'A full-stack SaaS MVP for Softgen.ai, an AI-powered web and app builder platform used by 186,000+ builders worldwide.',
+    teaser:
+      'Built as a MERN-based SaaS product with AI-assisted workflows, secure authentication, subscription billing, admin tooling, and cloud-ready deployment.',
+    problem:
+      'The platform needed an MVP that could support AI-assisted product generation, user account flows, billing, and admin management inside a production-ready SaaS foundation.',
+    solution:
+      'I built the product as a full-stack MERN application with AI integration and prompt engineering, JWT-based authentication, Stripe-powered subscriptions, REST APIs, MongoDB-backed data architecture, and deployment on cloud infrastructure.',
+    role: 'Full Stack MERN Developer',
+    stack: ['MongoDB', 'Express.js', 'React', 'Node.js', 'AWS', 'JWT', 'Stripe'],
+    features: [
+      'Full MERN stack SaaS MVP development',
+      'AI integration and prompt engineering workflows',
+      'User authentication and JWT-based access control',
+      'Subscription and billing system integration',
+      'Admin dashboard for platform management',
+      'REST API development and MongoDB database architecture',
+      'Deployment and cloud hosting setup',
+    ],
+    outcomes: [
+      'Delivered a production-oriented SaaS MVP that combined product generation workflows with dependable full-stack architecture.',
+      'Connected AI-assisted user flows, billing, authentication, and admin controls into one cohesive platform experience.',
+      'Demonstrated end-to-end MERN ownership across application logic, database design, integrations, and deployment.',
+    ],
+    proof: ['Full Stack MERN', 'AI-Powered SaaS', 'Subscription Platform'],
+    image: '/images/image3_original.png',
+    imageAlt: 'Softgen.ai SaaS dashboard interface for an AI-powered web and app builder platform.',
+    liveUrl: 'https://softgen.ai/',
+    caseStudy: true,
+    featured: true,
+    socialImage: '/images/image3_original.png',
+    keywords: [
+      'Softgen.ai case study',
+      'AI-powered SaaS MVP',
+      'full stack MERN developer project',
+      'Stripe subscription platform',
+      'AI integration and prompt engineering',
+    ],
+  },
   {
     slug: 'safarbot',
     name: 'SafarBot',
@@ -398,63 +618,21 @@ export const projects = [
 export const featuredProjects = projects.filter((project) => project.featured)
 export const supportingProjects = projects.filter((project) => !project.featured)
 
-export const faqItems = [
-  {
-    question: 'Who is Eshan Elahi?',
-    answer:
-      'Eshan Elahi is a software engineer and full stack developer who builds React, Node.js, MongoDB, Python, and FastAPI products, with a strong interest in AI-powered web applications and automation workflows.',
-  },
-  {
-    question: 'What does Eshan Elahi specialize in?',
-    answer:
-      'He specializes in full stack web development, backend APIs, MERN stack products, FastAPI services, AI automation, chatbot workflows, and AI-integrated web applications.',
-  },
-  {
-    question: 'Is Eshan Elahi a MERN stack developer?',
-    answer:
-      'Yes. His portfolio work and technical stack include React, Node.js, Express.js, and MongoDB, alongside Python and FastAPI for backend and AI-oriented services.',
-  },
-  {
-    question: 'Does Eshan Elahi build AI-powered web apps?',
-    answer:
-      'Yes. His work includes AI-assisted product flows, chatbot-style interactions, automation workflows, and projects like SafarBot that combine web application architecture with practical AI features.',
-  },
-  {
-    question: 'What projects has Eshan Elahi built?',
-    answer:
-      'Key projects include SafarBot, an AI travel booking platform, the Onyx Closings website, and the ABDANIX Solutions website, alongside other responsive business and storefront web experiences.',
-  },
-  {
-    question: 'What services does Eshan Elahi offer?',
-    answer:
-      'He offers full stack web application development, backend API development, MERN and React development, FastAPI and Python services, AI automation workflows, chatbot integration, and business website development.',
-  },
-  {
-    question: 'What technologies does Eshan Elahi use?',
-    answer:
-      'His core stack includes React, JavaScript, Node.js, Express.js, MongoDB, Python, FastAPI, REST APIs, frontend architecture, backend systems, and AI integration workflows.',
-  },
-  {
-    question: 'How can I hire Eshan Elahi?',
-    answer:
-      'You can contact him through the portfolio contact form, email him directly, review his projects, and download his resume to start a conversation about freelance work, collaboration, or software engineering roles.',
-  },
-]
-
 export const footerLinks = [
   { label: 'Home', href: '/' },
   { label: 'Professional Summary', href: '/#summary' },
   { label: 'Services', href: '/services/' },
   { label: 'Projects', href: '/projects/' },
-  { label: 'FAQ', href: '/#faq' },
   { label: 'Contact', href: '/contact/' },
 ]
 
 export const projectFooterLinks = [
+  { label: 'Dynaboard Case Study', href: '/projects/dynaboard/' },
+  { label: 'Freight Insurance Data Case Study', href: '/projects/freight-insurance-data/' },
+  { label: 'HighGlamp Case Study', href: '/projects/highglamp/' },
+  { label: 'Online Ordering Case Study', href: '/projects/online-ordering-restaurant/' },
+  { label: 'Softgen.ai Case Study', href: '/projects/softgen-ai/' },
   { label: 'SafarBot Case Study', href: '/projects/safarbot/' },
-  { label: 'Onyx Closings Project', href: '/projects/onyx-closings/' },
-  { label: 'ABDANIX Solutions Project', href: '/projects/abdanix-solutions/' },
-  { label: 'Download Resume', href: siteConfig.resumePath },
 ]
 
 export const knowsAbout = [

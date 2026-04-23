@@ -26,7 +26,7 @@ export default function ProjectsPage() {
               practical automation.
             </h1>
             <p className="page-hero-text">
-              These projects show the range of work I do across software engineering, MERN development, backend API
+              These projects show the range of work I do across full stack MERN development, backend API
               implementation, AI integration, and business-focused frontend delivery.
             </p>
           </div>
@@ -46,4 +46,3 @@ export default function ProjectsPage() {
     </div>
   )
 }
-

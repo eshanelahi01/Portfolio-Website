@@ -13,6 +13,11 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         projects: resolve(__dirname, 'projects/index.html'),
+        dynaboard: resolve(__dirname, 'projects/dynaboard/index.html'),
+        freightInsuranceData: resolve(__dirname, 'projects/freight-insurance-data/index.html'),
+        highglamp: resolve(__dirname, 'projects/highglamp/index.html'),
+        onlineOrderingRestaurant: resolve(__dirname, 'projects/online-ordering-restaurant/index.html'),
+        softgenAi: resolve(__dirname, 'projects/softgen-ai/index.html'),
         safarbot: resolve(__dirname, 'projects/safarbot/index.html'),
         onyxClosings: resolve(__dirname, 'projects/onyx-closings/index.html'),
         abdanixSolutions: resolve(__dirname, 'projects/abdanix-solutions/index.html'),

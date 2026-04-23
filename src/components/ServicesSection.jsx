@@ -35,19 +35,13 @@ export default function ServicesSection({ standalone = false }) {
       </div>
 
       <div className="page-callout reveal">
-        <p>
-          {siteConfig.availability}
-        </p>
+        {siteConfig.availability ? <p>{siteConfig.availability}</p> : null}
         <div className="page-callout-actions">
           <a className="button" href="/contact/">
             Hire Me
-          </a>
-          <a className="button button-ghost" href={siteConfig.resumePath} target="_blank" rel="noopener">
-            Download Resume
           </a>
         </div>
       </div>
     </section>
   )
 }
-

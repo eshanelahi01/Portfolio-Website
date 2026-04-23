@@ -44,7 +44,7 @@ export default function Contact({
               <h2 id="contact-title">{title}</h2>
             </div>
             <p>{description}</p>
-            <p className="contact-trust-note">{siteConfig.availability}</p>
+            {siteConfig.availability ? <p className="contact-trust-note">{siteConfig.availability}</p> : null}
             {standalone ? (
               <ul className="contact-helper-list">
                 <li>Full stack web applications and recruiter-facing portfolios</li>
@@ -112,9 +112,6 @@ export default function Contact({
                 <i className="fa-regular fa-paper-plane" />
                 {submitting ? 'Sending...' : 'Send Message'}
               </button>
-              <a className="button button-ghost" href={siteConfig.resumePath} target="_blank" rel="noopener">
-                Download Resume
-              </a>
             </div>
 
             {formMsg.text ? (

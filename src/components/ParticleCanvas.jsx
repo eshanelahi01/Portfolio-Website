@@ -208,7 +208,7 @@ export default function ParticleCanvas() {
     <canvas
       ref={canvasRef}
       className="particle-canvas"
-      style={{ width: '100%', height: '100%', pointerEvents: 'auto' }}
+      style={{ width: '100%', height: '100%', pointerEvents: 'none' }}
     />
   )
 }

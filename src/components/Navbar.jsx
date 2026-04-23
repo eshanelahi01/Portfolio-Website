@@ -22,7 +22,7 @@ export default function Navbar() {
       return undefined
     }
 
-    const sections = ['summary', 'expertise', 'projects', 'faq', 'contact']
+    const sections = ['home', 'summary', 'tech-stack', 'projects', 'contact']
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -70,7 +70,7 @@ export default function Navbar() {
   const navItems = useMemo(
     () => [
       { href: '/#summary', label: 'About', section: 'summary', route: '/' },
-      { href: '/#expertise', label: 'Expertise', section: 'expertise', route: '/' },
+      { href: '/#tech-stack', label: 'Expertise', section: 'tech-stack', route: '/' },
       { href: '/services/', label: 'Services', route: '/services/' },
       { href: '/projects/', label: 'Projects', route: '/projects/' },
       { href: '/contact/', label: 'Contact', route: '/contact/' },
@@ -82,6 +82,7 @@ export default function Navbar() {
 
   const isActive = (item) => {
     if (item.route !== '/' && pathname.startsWith(item.route)) return true
+    if (onHomePage && activeSection === 'home' && item.section === 'summary') return true
     if (onHomePage && item.section) return activeSection === item.section
     return pathname === item.route && !item.section
   }
@@ -90,13 +91,13 @@ export default function Navbar() {
     <>
       <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
         <div className="container nav-wrap">
-          <a className="brand" href="/" aria-label="Go to homepage">
-            <span className="brand-mark">
-              <img src={siteConfig.brandImage} alt="Eshan Elahi brand mark" width="528" height="560" />
+          <a className="brand nav-profile-brand" href="/" aria-label="Go to homepage">
+            <span className="nav-profile-avatar" aria-hidden="true">
+              <img src={siteConfig.brandImage} alt="" width="56" height="56" />
             </span>
-            <span className="brand-copy">
+            <span className="brand-copy nav-profile-copy">
               <strong>{siteConfig.name}</strong>
-              <small>{siteConfig.role}</small>
+              <small>{siteConfig.fullRole}</small>
             </span>
           </a>
 
@@ -113,14 +114,8 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <a
-            className="button button-ghost button-nav desktop-only"
-            href={siteConfig.resumePath}
-            target="_blank"
-            rel="noopener"
-            aria-label="Download Eshan Elahi resume in PDF format"
-          >
-            Resume
+          <a className="button button-ghost nav-talk" href="/contact/" aria-label="Go to contact page">
+            Let&apos;s Talk
           </a>
 
           <button
@@ -144,8 +139,8 @@ export default function Navbar() {
             {item.label}
           </a>
         ))}
-        <a className="button" href={siteConfig.resumePath} target="_blank" rel="noopener" onClick={handleNavClick}>
-          Resume
+        <a className="button mobile-nav-cta" href="/contact/" onClick={handleNavClick}>
+          Let&apos;s Talk
         </a>
       </div>
     </>

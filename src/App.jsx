@@ -83,7 +83,7 @@ export default function App() {
     <>
       <Preloader visible={loading} />
       <div className={`page-shell ${loading ? 'is-loading' : 'is-loaded'}`}>
-        <PageShell showParticles={pathname === '/'}>{pageContent}</PageShell>
+        <PageShell>{pageContent}</PageShell>
       </div>
     </>
   )
