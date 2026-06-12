@@ -7,8 +7,8 @@ export default function Experience() {
   return (
     <section id="experience" className="container section" ref={ref} aria-labelledby="experience-title">
       <div className="section-head reveal">
-        <p className="section-kicker">Employment History</p>
-        <h2 id="experience-title">Full-stack roles focused on shipping client products, stronger systems, and production-ready delivery.</h2>
+        <p className="section-kicker">Experience & Journey</p>
+        <h2 id="experience-title">Key milestones in my professional development</h2>
       </div>
 
       <div className="timeline">

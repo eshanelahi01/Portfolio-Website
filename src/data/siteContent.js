@@ -33,7 +33,7 @@ export const heroTypedWords = [
 export const professionalSummary = {
   title: 'Professional Summary',
   intro:
-    'I am Eshan, a Full-Stack MERN Developer with 3+ years of experience building scalable web applications for startups, SaaS companies, and growing businesses.',
+    'I am Eshan, a Full-Stack MERN Developer with  experience in building scalable web applications for startups, SaaS companies, and growing businesses.',
   body: [
     'I specialize in SaaS MVP development, custom web applications, CRM and admin dashboards, e-commerce platforms, REST and GraphQL APIs, and responsive Figma-to-React interfaces.',
     'Clients work with me because I can own the full product flow across frontend, backend, database design, integrations, and deployment while keeping the code clean, scalable, documented, and maintainable.',
@@ -41,7 +41,7 @@ export const professionalSummary = {
   ],
   facts: [
     { label: 'Location', value: 'Pakistan' },
-    { label: 'Experience', value: '3+ years building MERN applications' },
+    { label: 'Experience', value: 'Experienced in building MERN applications' },
     { label: 'Availability', value: 'Full-time contract work and long-term engagements' },
     { label: 'Focus', value: 'SaaS MVPs, dashboards, web apps, APIs, and AI-powered products' },
   ],
@@ -191,12 +191,23 @@ export const techCategories = [
 
 export const experienceTimeline = [
   {
-    date: 'January 2025 - Present',
-    role: 'Full Stack Developer',
-    company: 'Abdanix Solutions',
+    date: '2022',
+    role: 'Started BS Software Engineering',
+    company: 'PMAS Arid Agriculture University, Rawalpindi',
     summary: [
-      'Built and shipped multiple production MERN applications for business clients, including a CRM platform with role-based access control, a real-time analytics dashboard delivering live data via WebSockets, and an admin panel with automated reporting and user management.',
-      'Owned the complete development lifecycle from MongoDB schema design and Express.js API architecture through AWS and Vercel deployment, with CI/CD pipeline setup handled through GitHub Actions.',
+      'Began the journey into computer science and software development, building a strong foundation in algorithms, data structures, and programming fundamentals.',
+    ],
+    highlights: [
+      'Gained practical experience through projects and coursework, developing a passion for full-stack web development and modern technologies.',
+    ],
+  },
+  {
+    date: 'Dec 2025-Present',
+    role: 'Full Stack Developer',
+    company: 'ABDANIX Solutions',
+    summary: [
+      'Worked across 6+ client projects designing, developing, and maintaining MERN stack web applications ranging from business portals to e-commerce platforms.',
+      'Contributed across the full stack with React and Next.js frontends, Node.js and Express backends, MongoDB databases, and REST API integrations while handling bug fixes, feature additions, and performance improvements throughout each project.',
     ],
     highlights: [
       'Designed and built RESTful and GraphQL APIs consumed by React frontends.',
@@ -207,19 +218,14 @@ export const experienceTimeline = [
     ],
   },
   {
-    date: 'March 2023 - December 2024',
-    role: 'Web Developer',
-    company: 'True Tech Solutions',
+    date: '2026',
+    role: 'Graduated with BS in Software Engineering',
+    company: 'PMAS Arid Agriculture University, Rawalpindi',
     summary: [
-      'Worked across 6+ client projects designing, developing, and maintaining MERN stack web applications ranging from business portals to e-commerce platforms.',
-      'Contributed across the full stack with React and Next.js frontends, Node.js and Express backends, MongoDB databases, and REST API integrations while handling bug fixes, feature additions, and performance improvements throughout each project.',
+      'Completed BS in Software Engineering with expertise in full stack development, AI integration, and modern web technologies.',
     ],
     highlights: [
-      'Built responsive, cross-browser React interfaces from Figma and wireframe specs.',
-      'Developed and maintained RESTful APIs with proper error handling and validation.',
-      'Integrated third-party services including payment gateways and email providers.',
-      'Participated in code reviews and adopted clean code practices across the team.',
-      'Built strong experience with Git workflows, agile sprints, and client handoffs.',
+      'Graduated with honors and a strong portfolio of projects demonstrating full-stack MERN development and AI-powered web applications.',
     ],
   },
 ]

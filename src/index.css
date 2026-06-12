@@ -5413,3 +5413,197 @@ body {
     padding-block: 3rem;
   }
 }
+
+/* --- Responsive Site Pass and Project Screenshot Fit --- */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+.container,
+.site-header .container,
+.hero-section {
+  width: min(calc(100% - clamp(1rem, 4vw, 3rem)), 1520px) !important;
+}
+
+.site-header {
+  max-width: calc(100vw - clamp(1rem, 4vw, 2.25rem));
+}
+
+.section-head,
+.hero-copy,
+.page-hero-copy,
+.contact-copy,
+.footer-brand-block,
+.footer-links-block,
+.footer-contact-block {
+  min-width: 0;
+}
+
+.page-hero-grid,
+.contact-layout,
+.project-overview-grid {
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.page-hero-card,
+.contact-panel,
+.glass-card,
+.capability-card,
+.tech-stack-card,
+.timeline-card,
+.site-footer {
+  max-width: 100%;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+  min-width: 0;
+  width: 100%;
+}
+
+.footer-grid {
+  grid-template-columns: minmax(0, 1.25fr) minmax(12rem, 0.6fr) minmax(14rem, 0.85fr);
+}
+
+.footer-contact-list a,
+.footer-links a {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1080px) {
+  .hero-section {
+    grid-template-columns: minmax(0, 1fr);
+    text-align: center;
+  }
+
+  .hero-actions,
+  .social-row {
+    justify-content: center;
+  }
+
+  .hero-profile-card {
+    justify-self: center;
+  }
+
+  .page-hero-grid,
+  .contact-layout,
+  .project-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hero-visual {
+    justify-content: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-brand-block {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .container,
+  .site-header .container,
+  .hero-section {
+    width: min(calc(100% - 1rem), 1520px) !important;
+  }
+
+  .site-header {
+    max-width: calc(100vw - 1rem);
+  }
+
+  .nav-wrap {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .nav-profile-copy strong,
+  .nav-profile-copy small {
+    max-width: clamp(8rem, 48vw, 15rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .mobile-nav {
+    padding-inline: 1rem;
+  }
+
+  .mobile-nav a {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    font-size: clamp(1.35rem, 8vw, 1.8rem);
+  }
+
+  .hero-section,
+  .page-hero {
+    padding-top: clamp(6.25rem, 22vw, 8rem);
+  }
+
+  .section-head {
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-actions .button,
+  .page-actions .button,
+  .project-actions .button,
+  .page-callout-actions .button,
+  .form-actions .button,
+  .form-actions a {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .timeline {
+    padding-left: 0;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1rem minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12.5px;
+  }
+
+  .nav-profile-avatar {
+    width: 2.45rem;
+    height: 2.45rem;
+  }
+
+  .nav-profile-copy strong {
+    max-width: 9.5rem;
+    font-size: 0.84rem;
+  }
+
+  .nav-profile-copy small {
+    max-width: 9.5rem;
+    font-size: 0.64rem;
+  }
+
+  .project-modal-card {
+    width: calc(100vw - 0.75rem);
+    max-height: 88vh;
+  }
+}

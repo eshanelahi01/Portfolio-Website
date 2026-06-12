@@ -11,7 +11,7 @@ export default function Hero() {
         <h1 id="hero-title">
           I build <span className="headline-gradient">AI-powered web applications</span> and scalable MERN products.
         </h1>
-        <p className="hero-role">Full Stack Developer | MERN Developer</p>
+        <p className="hero-role">Full Stack Developer | MERN StackDeveloper</p>
         <p className="hero-text">{siteConfig.headline}</p>
 
         <div className="hero-actions">

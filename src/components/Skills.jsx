@@ -8,7 +8,7 @@ export default function Skills() {
     <section id="tech-stack" className="container section tech-stack-section" ref={ref} aria-labelledby="tech-stack-title">
       <div className="section-head reveal">
         <p className="section-kicker">Tech Stack</p>
-        <h2 id="tech-stack-title">Tools and technologies I use to build scalable products.</h2>
+        <h2 id="tech-stack-title">Tools & Technologies </h2>
       </div>
 
       <div className="tech-card-grid">
